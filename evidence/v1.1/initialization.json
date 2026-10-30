@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "initial_pose": [
+    -2.0,
+    -0.5,
+    0.0
+  ],
+  "initial_pose_published": true,
+  "initialize_only": true,
+  "initialization_succeeded": true,
+  "goals": [],
+  "all_succeeded": false,
+  "note": "Distance is odometry-derived. Final goal error uses a fresh map-frame feedback/AMCL estimate, not ground truth. Scan minimum is sensor range, not footprint clearance or a collision guarantee.",
+  "wall_seconds": 8.68,
+  "sim_seconds": 6.24,
+  "invalid_odom_samples": 0
+}

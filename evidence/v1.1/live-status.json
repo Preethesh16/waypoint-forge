@@ -1,0 +1,19 @@
+{
+  "phase": "mission_succeeded",
+  "goal_index": 2,
+  "goal_count": 2,
+  "goal": [
+    -1.5,
+    1.5,
+    -1.5708
+  ],
+  "wall_seconds": 58.009,
+  "sim_seconds": 54.547,
+  "feedback": {
+    "distance_remaining_m": 0.0,
+    "number_of_recoveries": 0,
+    "navigation_time_seconds": 21.498,
+    "age_wall_seconds": -5.327000053512165e-05,
+    "fresh": true
+  }
+}

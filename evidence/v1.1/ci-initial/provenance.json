@@ -1,0 +1,32 @@
+{
+  "run_id": 41102204300,
+  "commit": "c05b6d5e275b4d31411873ffae578e9d44e8c495",
+  "url": "https://github.com/Preethesh16/waypoint-forge/actions/runs/41102204300",
+  "artifact_id": 13001010081,
+  "artifact_name": "clean-simulation-c05b6d5e275b4d31411873ffae578e9d44e8c495-1",
+  "conclusion": "success",
+  "scope": "Initial clean Docker build and real simulation; predates final v1.1 mission/benchmark/dynamic obstacle improvements.",
+  "original_artifact_files_sha256": {
+    "build.log": "dca102bcc735edf84e17fa8ab5a3418b2d76ae2b591af7e05624ed64e6210883",
+    "ci-doctor.json": "4263ce6335eb44b1cb9ea00914bf03a4240c006c0520376e6b6e917ce9c2a6e7",
+    "ci-mission.json": "66079bca80378595264685138f9241a6ef9c06c757bf05a040517e06ac4e515d",
+    "cli-tests.log": "d1db9c2cfaf3f851d67c01d8b649ab2025e91a42d039e0953527bc3bbf21aeec",
+    "container.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "doctor.log": "4263ce6335eb44b1cb9ea00914bf03a4240c006c0520376e6b6e917ce9c2a6e7",
+    "image-inspect.json": "b846444eac7cd29a2c15d117e3d40c0e923e082ebfa2f53d46f00543d4598abe",
+    "installed-packages.tsv": "4fa0df68a2e1e171c73073740b988732eae8a5626b56c6dd867827aab9ff9375",
+    "mission.log": "edeab1f72837a2934e4e8dcb5bdedf26149326c03b241424e75103e6450c43e2",
+    "simulation.log": "3a423910bcf2f93af982e104357115d60d3d135e948f3d0a4d63372623d0a8b0",
+    "xvfb.log": "b987a262609a3720f450ab6815ed90b2069dd47b7b012959ca19c325aebf5d55"
+  },
+  "results": {
+    "cli_tests": 4,
+    "goals_succeeded": 2,
+    "goal_wall_seconds": [
+      31.456,
+      19.585
+    ],
+    "doctor_checks_passed": 15,
+    "docker_image_id": "sha256:3b0efb73638c9fa910bf03c845149145087a004663f4678b9a2e27a9bfeeafb8"
+  }
+}

@@ -4,16 +4,26 @@ A repeatable two-station navigation mission through the TurtleBot3 obstacle
 world, with Gazebo simulation, RViz visualization and measured action outcomes.
 Prepared for the Antropi Robotics Software Intern assignment.
 
-**Verified:** two autonomous goals succeeded in the recorded run, in 52.235 s
-total. The independent live diagnostics passed all 15 checks. See
-[actual test results](docs/verification.md) and [recorded mission data](evidence/mission.json).
+**Measured:** six fresh simulation trials passed all 13 requested goals.
+The five repeated standard missions had a median summed goal time of **50.224 s**.
+Every trial passed the live diagnostics and process-cleanup checks. These are
+observed results on one host, not a statistical reliability guarantee.
 
-![Gazebo and RViz demonstration](evidence/demo-frame.png)
+![Gazebo and RViz with live mission feedback](evidence/v1.1/demo-frame.png)
 
-[Watch or download the 75-second demo](https://github.com/Preethesh16/waypoint-forge/releases/download/v1.0.0/demo.mp4)
-from the [v1.0.0 release](https://github.com/Preethesh16/waypoint-forge/releases/tag/v1.0.0).
-It shows actual Gazebo/RViz execution at normal speed. The release also contains
-the complete submission ZIP, including the video.
+![Measured navigation trials](evidence/v1.1/benchmark-summary.png)
+
+See the [benchmark and raw evidence](docs/benchmark.md),
+[live mission telemetry](docs/mission-evidence.md), and
+[optional unmapped-obstacle experiment](docs/unmapped-obstacle.md).
+
+[Watch or download the 90-second demo](https://github.com/Preethesh16/waypoint-forge/releases/download/v1.1.0/demo.mp4)
+from the [v1.1.0 release](https://github.com/Preethesh16/waypoint-forge/releases/tag/v1.1.0).
+The recording shows both goals succeeding with an added orange crate absent
+from the static map, actual Gazebo/RViz execution and live action feedback.
+The sensor-driven costmap check passed; the demonstration mission took 58.01 s
+including client initialization.
+The release also contains the complete submission ZIP and benchmark report.
 
 ## Run on Ubuntu 24.04 / ROS 2 Jazzy
 
@@ -95,31 +105,28 @@ export ROS_DOMAIN_ID=73
 python3 scripts/doctor.py --duration 10 --output evidence/doctor.json
 ```
 
-Record a fresh run inside the supplied virtual desktop, then start the mission
-in another terminal:
-
-```bash
-DISPLAY=:99 bash scripts/record.sh
-```
-
-Recording refuses to overwrite an existing file; pass a new absolute output
-path as its first argument for another take. Restart the simulation before each
-mission so the localization initial pose matches the robot's physical pose.
+To record a fresh run with the real mission-status overlay, follow the
+[demo guide](docs/demo-guide.md). Initialize localization first, start recording,
+then run the mission with `--skip-initial-pose`. Restart the simulator before
+starting a new normally initialized mission.
 
 ## Results and limitations
 
-| Recorded goal | Wall time | Odometry distance | Estimated positional error |
-|---|---:|---:|---:|
-| (1.5, 1.5) | 32.357 s | 5.299 m | 0.0464 m |
-| (-1.5, 1.5) | 19.878 s | 3.098 m | 0.0201 m |
+| Repeated experiment | Result |
+|---|---:|
+| Standard two-goal route | 5/5 trials, 10/10 goals |
+| Alternative three-goal route | 1/1 trial, 3/3 goals |
+| Standard summed goal time | 49.642–52.322 s; median 50.224 s |
+| Maximum fresh estimated final position error | 0.1420 m |
 
-The practical additions are a repeatable action-driven mission with measured
-results, and a bounded read-only diagnostic tool. Neither replaces Nav2.
+The practical additions are a bounded action-driven mission, timestamped live
+telemetry, a repeatability harness, read-only diagnostics, and a sensor-driven
+obstacle experiment. They use the upstream Nav2 navigation algorithms.
 
-The actual runtime was installed and exercised in a fresh Ubuntu 24.04 container
-on an Arch host. The final Dockerfile has **not** been independently clean-built
-because of the host disk budget. [Tested package versions](evidence/package-versions.tsv)
-are recorded; apt dependencies and the Ubuntu base tag are not fully locked.
+The actual runtime was exercised in an Ubuntu 24.04 container on an Arch host.
+The Dockerfile pins the Ubuntu manifest, ROS signing-key revision and principal
+ROS package versions. Transitive apt dependencies remain mutable. See
+[reproducibility and clean-build verification](docs/reproducibility.md).
 No physical hardware was tested. Sensor-range minima are not footprint-clearance
 or contact guarantees, and AMCL error is an estimate rather than ground truth.
 The software renderer emitted a startup GLSL warning, but the map, costmaps and

@@ -1,41 +1,51 @@
 # Acceptance checklist
 
-The assignment and email were inspected on 30 October 2026. No ROS distribution
-was specified, so this project uses ROS 2 Jazzy on Ubuntu 24.04 with the matching
-TurtleBot3 packages and Gazebo vendor dependencies. The host is Arch Linux;
-runtime isolation is provided by Docker. No physical hardware is involved.
+The actual assignment/email were inspected on 30 October 2026. No ROS distribution
+was specified, so the project uses ROS 2 Jazzy on Ubuntu 24.04, matching TurtleBot3
+packages and Gazebo Sim 8. The host is Arch Linux; Docker supplies Ubuntu runtime
+isolation. No physical hardware has been operated.
 
-| Requirement | Implementation | Acceptance check | Evidence/status |
-|---|---|---|---|
-| TurtleBot3 in Gazebo | Official Burger model and TurtleBot3 world | Robot spawns, physics/clock/sensors advance | Passed: live Gazebo + doctor evidence |
-| Autonomous goal navigation | Nav2 + AMCL + checked-in parameters | Both NavigateToPose actions succeed | Passed: evidence/mission.json, both goals succeeded |
-| Obstacle avoidance | Laser-driven costmaps, NavFn, DWB | Observe trajectory around cylinder field in Gazebo/RViz | Passed: actual recorded trajectory around obstacles |
-| 1–2 minute screen recording | Dedicated simulation desktop | 60–120 second video visibly shows Gazebo and RViz | Passed: 75 s, 1600×900, 20 fps |
-| Relevant public GitHub repository | Launch, mission, configuration, README, attribution | Clean repository; public URL works | Passed: https://github.com/Preethesh16/waypoint-forge is public |
-| Brief setup instructions | Native Jazzy and Docker instructions | Run documented commands against actual environment | Runtime commands passed; clean Dockerfile build not performed |
-| Submission answers | User-confirmed ROS 2 experience and factual challenge account | Correct links and truthful answers | Prior experience: Yes; factual answers ready; submission receipt tracked separately |
-| AI assistance allowed | Attribution and disclosure | Explicit disclosure, no fabricated outcomes | Included in THIRD_PARTY.md |
+## Required assignment deliverables
 
-## Supporting quality checks
+| Requirement | Implementation | Observable acceptance | Evidence/status |
+| --- | --- | --- | --- |
+| TurtleBot3 in Gazebo | Official Burger model and obstacle world | Robot spawns; physics, clock and sensors advance | Passed: live diagnostics and actual recording |
+| Autonomous navigation | AMCL, Nav2, configured costmaps/planner/controller | Real NavigateToPose actions succeed | Passed: v1.0 recorded mission and v1.1 13/13 benchmark goals |
+| Obstacle avoidance | Laser-driven costmaps, NavFn and DWB | Robot follows paths around obstacles in Gazebo/RViz | Passed in existing recording; no formal collision-free claim |
+| 1–2 minute recording | Dedicated simulation desktop | 60–120 s recording visibly shows both applications | Existing verified v1.0:75 s; enhanced v1.1 recording verification tracked below |
+| Public GitHub repository | Source, configuration, documentation and attribution | Public URL works | Verified public: https://github.com/Preethesh16/waypoint-forge; v1.1 release publication tracked separately |
+| Brief setup instructions | Exact native Jazzy/Docker/runtime commands | Exercise documented runtime | Passed in Ubuntu container; separate fresh Dockerfile image build unverified |
+| Submission form answers | Confirmed experience and factual account of debugging | Correct links and truthful answers | Prior ROS 2 experience:Yes; submission receipt tracked separately |
+| Permitted assistance | Attribution and disclosure | AI use disclosed; upstream work credited | Included in THIRD_PARTY.md |
 
-- [x] Inspect actual brief, deadline and form questions.
-- [x] Inspect host capabilities and available storage.
-- [x] Python/shell syntax and YAML configuration consistency checks.
-- [x] Complete dependency installation and capture package versions.
-- [x] Verify simulation clock, topic types/QoS, sensor validity and TF chain.
-- [x] Verify nominal mission and bounded failure/interruption behavior.
-- [x] Inspect actual Gazebo and RViz visualization.
-- [x] Independently test final integrated implementation.
-- [x] Resolve substantive independent review findings.
-- [x] Record and inspect the final demo, save measured evidence.
-- [x] Update README with actual results and known limitations.
-- [x] Prepare finished artifacts and publication/submission preview for approval.
+## v1.1 supporting checks
 
-## Selected differentiators
+- [x] Preserve existing v1.0 evidence instead of replacing its historical results.
+- [x] Run five actual fresh-start standard missions and one alternative route.
+- [x] Verify all six clocks start fresh with one publisher, all post-mission
+  diagnostics pass, and no live owned simulator processes survive cleanup.
+- [x] Record **6/6 trial successes and 13/13 goal successes**, with unchanged core
+  source hashes and raw per-trial evidence.
+- [x] Verify fresh feedback/AMCL pose selection and populated bounded trajectories.
+- [x] Run **21/21 independent regression tests** successfully (11.687 s).
+- [x] Check plot calculations, units, map orientation, and estimate/sample-size caveats.
+- [x] Reject mixed-source benchmark reports when plotting a fixed configuration.
+- [ ] Verify enhanced video duration, complete decode and selected actual frames.
+- [ ] Verify optional unmapped-crate experiment from actual map/costmap evidence.
+- [ ] Complete v1.1 release/link checks after publication.
 
-1. Repeatable action-based mission with measured results and explicit failure
-   status: makes review and debugging easier without replacing Nav2.
-2. Bounded runtime diagnostics for clock/sensors/transforms/readiness: useful for
-   reproducing the integration. It is a diagnostic aid, not a safety guarantee.
+Detailed results: [independent verification](verification.md),
+[benchmark protocol/results](benchmark.md), and
+[evidence/v1.1/regression-tests.txt](../evidence/v1.1/regression-tests.txt).
 
-Optional functionality must not delay or weaken the required navigation demo.
+## Practical differentiators and boundaries
+
+1. Repeatable action missions with fresh measured evidence, live status and a
+   small repeated-run benchmark make the behavior easier to explain and reproduce.
+2. Bounded runtime diagnostics and an optional unmapped-obstacle observation make
+   integration faults and sensor-driven costmap changes easier to inspect.
+
+These features expose existing Nav2 behavior; they do not replace its algorithms
+or constitute a safety system. Five repeat successes on one host/map/configuration
+are not a reliability probability. Hardware, changing layouts, moving obstacles
+and independent collision/contact validation remain outside the verified scope.

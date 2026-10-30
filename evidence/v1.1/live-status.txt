@@ -1,0 +1,2 @@
+MISSION SUCCEEDED
+Elapsed 58.0s wall | 54.5s sim | Remaining 0.00 m

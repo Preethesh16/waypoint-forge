@@ -1,0 +1,569 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-10-30-17-58-31-580787-carvalho-18864
+[INFO] [launch]: Default logging verbosity is set to INFO
+urdf_file_name : turtlebot3_burger.urdf
+urdf_file_name : turtlebot3_burger.urdf
+[INFO] [gazebo-1]: process started with pid [18883]
+[INFO] [robot_state_publisher-2]: process started with pid [18884]
+[INFO] [create-3]: process started with pid [18885]
+[INFO] [parameter_bridge-4]: process started with pid [18887]
+[INFO] [component_container_isolated-5]: process started with pid [18888]
+[create-3] [INFO] [1793383112.687384342] [ros_gz_sim]: Requesting list of world names.
+[robot_state_publisher-2] [INFO] [1793383112.694774148] [robot_state_publisher]: Robot initialized
+[component_container_isolated-5] [INFO] [1793383112.885711187] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libmap_server_core.so
+[component_container_isolated-5] [INFO] [1793383112.899333600] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+[component_container_isolated-5] [INFO] [1793383112.899385997] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+[component_container_isolated-5] [INFO] [1793383112.899389411] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-5] [INFO] [1793383112.899393524] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-5] [INFO] [1793383112.911671882] [map_server]: 
+[component_container_isolated-5] 	map_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1793383112.911718603] [map_server]: Creating
+[component_container_isolated-5] [INFO] [1793383112.912156989] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libamcl_core.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map_server' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1793383112.916610738] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-5] [INFO] [1793383112.916669813] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-5] [INFO] [1793383112.923918890] [amcl]: 
+[component_container_isolated-5] 	amcl lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1793383112.924140676] [amcl]: Creating
+[component_container_isolated-5] [INFO] [1793383112.924931802] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libcontroller_server_core.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/amcl' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1793383112.927031404] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-5] [INFO] [1793383112.927045829] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-5] [INFO] [1793383112.932183225] [controller_server]: 
+[component_container_isolated-5] 	controller_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1793383112.934652742] [controller_server]: Creating controller server
+[component_container_isolated-5] [INFO] [1793383112.940565697] [local_costmap.local_costmap]: 
+[component_container_isolated-5] 	local_costmap lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1793383112.940835157] [local_costmap.local_costmap]: Creating Costmap
+[component_container_isolated-5] [INFO] [1793383112.941440360] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libnav2_lifecycle_manager_core.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/controller_server' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1793383112.942147354] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-5] [INFO] [1793383112.942156733] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-5] [INFO] [1793383112.947857717] [lifecycle_manager_localization]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_localization' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1793383112.953387067] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[component_container_isolated-5] [INFO] [1793383112.953410729] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libsmoother_server_core.so
+[component_container_isolated-5] [INFO] [1793383112.955832137] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-5] [INFO] [1793383112.955863231] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-5] [INFO] [1793383112.960074702] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-5] [INFO] [1793383112.960125399] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[component_container_isolated-5] [INFO] [1793383112.960302155] [map_server]: Configuring
+[component_container_isolated-5] [INFO] [1793383112.960369545] [map_io]: Loading yaml file: /opt/ros/jazzy/share/turtlebot3_navigation2/map/map.yaml
+[component_container_isolated-5] [INFO] [1793383112.960641863] [map_io]: resolution: 0.05
+[component_container_isolated-5] [INFO] [1793383112.960656393] [map_io]: origin[0]: -10
+[component_container_isolated-5] [INFO] [1793383112.960663635] [map_io]: origin[1]: -10
+[component_container_isolated-5] [INFO] [1793383112.960669076] [map_io]: origin[2]: 0
+[component_container_isolated-5] [INFO] [1793383112.960706708] [map_io]: free_thresh: 0.196
+[component_container_isolated-5] [INFO] [1793383112.960713572] [map_io]: occupied_thresh: 0.65
+[component_container_isolated-5] [INFO] [1793383112.960720592] [map_io]: mode: trinary
+[component_container_isolated-5] [INFO] [1793383112.960726569] [map_io]: negate: 0
+[component_container_isolated-5] [INFO] [1793383112.960922521] [map_io]: Loading image_file: /opt/ros/jazzy/share/turtlebot3_navigation2/map/map.pgm
+[component_container_isolated-5] [INFO] [1793383112.963945173] [map_io]: Read map /opt/ros/jazzy/share/turtlebot3_navigation2/map/map.pgm: 384 X 384 map @ 0.05 m/cell
+[component_container_isolated-5] [INFO] [1793383112.969022085] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[component_container_isolated-5] [INFO] [1793383112.969157609] [amcl]: Configuring
+[component_container_isolated-5] [INFO] [1793383112.969264605] [amcl]: initTransforms
+[component_container_isolated-5] [INFO] [1793383112.970091766] [smoother_server]: 
+[component_container_isolated-5] 	smoother_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1793383112.971367914] [smoother_server]: Creating smoother server
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/smoother_server' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1793383112.973100665] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libplanner_server_core.so
+[component_container_isolated-5] [INFO] [1793383112.974056981] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-5] [INFO] [1793383112.974069080] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-5] [INFO] [1793383112.974873944] [amcl]: initPubSub
+[component_container_isolated-5] [INFO] [1793383112.979436168] [amcl]: Subscribed to map topic.
+[component_container_isolated-5] [INFO] [1793383112.984026270] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[component_container_isolated-5] [INFO] [1793383112.984122488] [map_server]: Activating
+[component_container_isolated-5] [INFO] [1793383112.984391673] [map_server]: Creating bond (map_server) to lifecycle manager.
+[component_container_isolated-5] [INFO] [1793383112.984522619] [amcl]: Received a 384 X 384 map @ 0.050 m/pix
+[component_container_isolated-5] [INFO] [1793383112.991791907] [planner_server]: 
+[component_container_isolated-5] 	planner_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1793383112.992888907] [planner_server]: Creating
+[component_container_isolated-5] [INFO] [1793383113.004015043] [global_costmap.global_costmap]: 
+[component_container_isolated-5] 	global_costmap lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1793383113.004402552] [global_costmap.global_costmap]: Creating Costmap
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planner_server' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1793383113.007129886] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libroute_server_core.so
+[component_container_isolated-5] [INFO] [1793383113.008914448] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_route::RouteServer>
+[component_container_isolated-5] [INFO] [1793383113.008937469] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_route::RouteServer>
+[component_container_isolated-5] [INFO] [1793383113.019072667] [route_server]: 
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/route_server' in container '/nav2_container'
+[component_container_isolated-5] 	route_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1793383113.020967955] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libbehavior_server_core.so
+[component_container_isolated-5] [INFO] [1793383113.021826544] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-5] [INFO] [1793383113.021839234] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-5] [INFO] [1793383113.029576529] [behavior_server]: 
+[component_container_isolated-5] 	behavior_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/behavior_server' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1793383113.032063665] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libbt_navigator_core.so
+[component_container_isolated-5] [INFO] [1793383113.035196281] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-5] [INFO] [1793383113.035245095] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-5] [INFO] [1793383113.043781497] [bt_navigator]: 
+[component_container_isolated-5] 	bt_navigator lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1793383113.044507030] [bt_navigator]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/bt_navigator' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1793383113.046179301] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libwaypoint_follower_core.so
+[component_container_isolated-5] [INFO] [1793383113.047135154] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-5] [INFO] [1793383113.047150054] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-5] [INFO] [1793383113.056832655] [waypoint_follower]: 
+[component_container_isolated-5] 	waypoint_follower lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1793383113.057081724] [waypoint_follower]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/waypoint_follower' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1793383113.059054528] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libvelocity_smoother_core.so
+[component_container_isolated-5] [INFO] [1793383113.059787992] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-5] [INFO] [1793383113.059797640] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-5] [INFO] [1793383113.070507952] [velocity_smoother]: 
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/velocity_smoother' in container '/nav2_container'
+[component_container_isolated-5] 	velocity_smoother lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1793383113.072994165] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libcollision_monitor_core.so
+[component_container_isolated-5] [INFO] [1793383113.075334298] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_collision_monitor::CollisionMonitor>
+[component_container_isolated-5] [INFO] [1793383113.075355202] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_collision_monitor::CollisionMonitor>
+[component_container_isolated-5] [INFO] [1793383113.086445732] [collision_monitor]: 
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/collision_monitor' in container '/nav2_container'
+[component_container_isolated-5] 	collision_monitor lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1793383113.088162330] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libopennav_docking_core.so
+[component_container_isolated-5] [INFO] [1793383113.089408334] [lifecycle_manager_localization]: Server map_server connected with bond.
+[component_container_isolated-5] [INFO] [1793383113.089437926] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.089572124] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<opennav_docking::DockingServer>
+[component_container_isolated-5] [INFO] [1793383113.089585890] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<opennav_docking::DockingServer>
+[component_container_isolated-5] [INFO] [1793383113.089684479] [amcl]: Activating
+[component_container_isolated-5] [INFO] [1793383113.089731264] [amcl]: Creating bond (amcl) to lifecycle manager.
+[component_container_isolated-5] [INFO] [1793383113.105438446] [docking_server]: 
+[component_container_isolated-5] 	docking_server lifecycle node launched. 
+[component_container_isolated-5] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-5] [INFO] [1793383113.105479200] [docking_server]: Creating docking_server
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/docking_server' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1793383113.107455696] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-5] [INFO] [1793383113.107469316] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-5] [INFO] [1793383113.115349894] [lifecycle_manager_navigation]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_navigation' in container '/nav2_container'
+[component_container_isolated-5] [INFO] [1793383113.118807791] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.130058937] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.130092221] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.130217668] [controller_server]: Configuring controller interface
+[component_container_isolated-5] [INFO] [1793383113.130247033] [controller_server]: getting progress checker plugins..
+[component_container_isolated-5] [INFO] [1793383113.130545881] [controller_server]: getting goal checker plugins..
+[component_container_isolated-5] [INFO] [1793383113.130849214] [controller_server]: Controller frequency set to 10.0000Hz
+[component_container_isolated-5] [INFO] [1793383113.130930050] [local_costmap.local_costmap]: Configuring
+[component_container_isolated-5] [INFO] [1793383113.137218239] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-5] [INFO] [1793383113.139868384] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[component_container_isolated-5] [INFO] [1793383113.142193429] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-5] [INFO] [1793383113.142219787] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[component_container_isolated-5] [INFO] [1793383113.142624781] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[component_container_isolated-5] [INFO] [1793383113.146098423] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[component_container_isolated-5] [INFO] [1793383113.146119053] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-5] [INFO] [1793383113.146534581] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-5] [INFO] [1793383113.159494790] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[component_container_isolated-5] [INFO] [1793383113.159784496] [controller_server]: Controller Server has progress_checker  progress checkers available.
+[component_container_isolated-5] [INFO] [1793383113.160071676] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[component_container_isolated-5] [INFO] [1793383113.160413005] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[component_container_isolated-5] [INFO] [1793383113.161713696] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[component_container_isolated-5] [INFO] [1793383113.162460955] [controller_server]: Setting transform_tolerance to 0.200000
+[component_container_isolated-5] [INFO] [1793383113.171886136] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[component_container_isolated-5] [INFO] [1793383113.172665767] [controller_server]: Critic plugin initialized
+[component_container_isolated-5] [INFO] [1793383113.172921090] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[component_container_isolated-5] [INFO] [1793383113.173385575] [controller_server]: Critic plugin initialized
+[component_container_isolated-5] [INFO] [1793383113.173482744] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[component_container_isolated-5] [INFO] [1793383113.173609134] [controller_server]: Critic plugin initialized
+[component_container_isolated-5] [INFO] [1793383113.173692563] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[component_container_isolated-5] [INFO] [1793383113.173925496] [controller_server]: Critic plugin initialized
+[component_container_isolated-5] [INFO] [1793383113.173998247] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[component_container_isolated-5] [INFO] [1793383113.174208524] [controller_server]: Critic plugin initialized
+[component_container_isolated-5] [INFO] [1793383113.174278779] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[component_container_isolated-5] [INFO] [1793383113.174484101] [controller_server]: Critic plugin initialized
+[component_container_isolated-5] [INFO] [1793383113.174585177] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[component_container_isolated-5] [INFO] [1793383113.174766562] [controller_server]: Critic plugin initialized
+[component_container_isolated-5] [INFO] [1793383113.174777455] [controller_server]: Controller Server has FollowPath  controllers available.
+[component_container_isolated-5] [INFO] [1793383113.181891238] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.182054431] [smoother_server]: Configuring smoother server
+[component_container_isolated-5] [INFO] [1793383113.189991927] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[component_container_isolated-5] [INFO] [1793383113.191025828] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[component_container_isolated-5] [INFO] [1793383113.195677207] [lifecycle_manager_localization]: Server amcl connected with bond.
+[component_container_isolated-5] [INFO] [1793383113.195706678] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.195714431] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.195900965] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.196045788] [planner_server]: Configuring
+[component_container_isolated-5] [INFO] [1793383113.196070181] [global_costmap.global_costmap]: Configuring
+[component_container_isolated-5] [INFO] [1793383113.201635827] [global_costmap.global_costmap]: Using plugin "static_layer"
+[component_container_isolated-5] [INFO] [1793383113.202287533] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[component_container_isolated-5] [INFO] [1793383113.202948514] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[component_container_isolated-5] [INFO] [1793383113.202966911] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-5] [INFO] [1793383113.203947610] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[component_container_isolated-5] [INFO] [1793383113.208054756] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-5] [INFO] [1793383113.208080602] [global_costmap.global_costmap]: Using plugin "voxel_layer"
+[component_container_isolated-5] [INFO] [1793383113.208860491] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[create-3] [INFO] [1793383113.210802286] [ros_gz_sim]: Entity creation successful.
+[component_container_isolated-5] [INFO] [1793383113.215144494] [global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[component_container_isolated-5] [INFO] [1793383113.215183721] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-5] [INFO] [1793383113.216464308] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-5] [INFO] [1793383113.231327018] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+[component_container_isolated-5] [INFO] [1793383113.231356563] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[component_container_isolated-5] [INFO] [1793383113.232124594] [planner_server]: Planner Server has GridBased  planners available.
+[component_container_isolated-5] [INFO] [1793383113.244067324] [lifecycle_manager_navigation]: [34m[1mConfiguring route_server[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.244206394] [route_server]: Configuring
+[component_container_isolated-5] [INFO] [1793383113.257727516] [route_server]: Created GraphFileLoader GeoJsonGraphFileLoader of type nav2_route::GeoJsonGraphFileLoader
+[component_container_isolated-5] [INFO] [1793383113.257752383] [route_server]: Configuring geojson graph file loader
+[component_container_isolated-5] [INFO] [1793383113.257757625] [route_server]: No graph file provided to load yet.
+[component_container_isolated-5] [INFO] [1793383113.259495894] [route_server]: Created edge cost function plugin DistanceScorer of type nav2_route::DistanceScorer
+[component_container_isolated-5] [INFO] [1793383113.259515790] [route_server]: Configuring distance scorer.
+[component_container_isolated-5] [INFO] [1793383113.259735644] [route_server]: Created edge cost function plugin DynamicEdgesScorer of type nav2_route::DynamicEdgesScorer
+[component_container_isolated-5] [INFO] [1793383113.259743528] [route_server]: Configuring adjust edges scorer.
+[component_container_isolated-5] [INFO] [1793383113.262236135] [route_server]: Created route operation AdjustSpeedLimit of type nav2_route::AdjustSpeedLimit
+[component_container_isolated-5] [INFO] [1793383113.262261816] [route_server]: Configuring Adjust speed limit operation.
+[component_container_isolated-5] [INFO] [1793383113.263025233] [route_server]: Created route operation ReroutingService of type nav2_route::ReroutingService
+[component_container_isolated-5] [INFO] [1793383113.263040071] [route_server]: Configuring Rerouting service operation.
+[component_container_isolated-5] [INFO] [1793383113.264964666] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.265109966] [behavior_server]: Configuring
+[component_container_isolated-5] [INFO] [1793383113.268245592] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors::Spin
+[component_container_isolated-5] [INFO] [1793383113.269209613] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors::BackUp
+[component_container_isolated-5] [INFO] [1793383113.270007987] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+[component_container_isolated-5] [INFO] [1793383113.270999091] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors::Wait
+[component_container_isolated-5] [INFO] [1793383113.271813315] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors::AssistedTeleop
+[component_container_isolated-5] [INFO] [1793383113.273023446] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 384 X 384 at 0.050000 m/pix
+[component_container_isolated-5] [INFO] [1793383113.274858454] [behavior_server]: Configuring spin
+[component_container_isolated-5] [INFO] [1793383113.279172874] [behavior_server]: Configuring backup
+[component_container_isolated-5] [INFO] [1793383113.282265413] [behavior_server]: Configuring drive_on_heading
+[component_container_isolated-5] [INFO] [1793383113.286263359] [behavior_server]: Configuring wait
+[component_container_isolated-5] [INFO] [1793383113.289297610] [behavior_server]: Configuring assisted_teleop
+[component_container_isolated-5] [INFO] [1793383113.294671185] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.294753941] [velocity_smoother]: Configuring velocity smoother
+[component_container_isolated-5] [INFO] [1793383113.297120813] [lifecycle_manager_navigation]: [34m[1mConfiguring collision_monitor[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.297248611] [collision_monitor]: Configuring
+[component_container_isolated-5] [INFO] [1793383113.300598378] [collision_monitor]: [scan]: Creating Scan
+[component_container_isolated-5] [INFO] [1793383113.302071632] [collision_monitor]: [PolygonStop]: Creating Polygon
+[component_container_isolated-5] [INFO] [1793383113.302096619] [collision_monitor]: [PolygonStop]: Creating Circle
+[component_container_isolated-5] [INFO] [1793383113.304062178] [collision_monitor]: [PolygonSlow]: Creating Polygon
+[component_container_isolated-5] [INFO] [1793383113.305722164] [collision_monitor]: [FootprintApproach]: Creating Polygon
+[component_container_isolated-5] [INFO] [1793383113.305830909] [collision_monitor]: [FootprintApproach]: Polygon points are not defined. Using dynamic subscription instead.
+[component_container_isolated-5] [INFO] [1793383113.306603659] [collision_monitor]: [FootprintApproach]: Making footprint subscriber on /local_costmap/published_footprint topic
+[component_container_isolated-5] [INFO] [1793383113.311329982] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.311444045] [bt_navigator]: Configuring
+[component_container_isolated-5] [INFO] [1793383113.315737415] [bt_navigator]: Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator
+[component_container_isolated-5] [WARN] [1793383113.319364716] [bt_navigator]: Error_code parameters were not set. Using default values of: follow_path_error_code compute_path_error_code
+[component_container_isolated-5] Make sure these match your BT and there are not other sources of error codes youreported to your application
+[INFO] [create-3]: process has finished cleanly [pid 18885]
+[component_container_isolated-5] [INFO] [1793383113.374604155] [bt_navigator]: Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator
+[component_container_isolated-5] [INFO] [1793383113.395591337] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.395679261] [waypoint_follower]: Configuring
+[component_container_isolated-5] [INFO] [1793383113.412512321] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[component_container_isolated-5] [INFO] [1793383113.413585094] [lifecycle_manager_navigation]: [34m[1mConfiguring docking_server[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.413707165] [docking_server]: Configuring docking_server
+[component_container_isolated-5] [INFO] [1793383113.413741347] [docking_server]: Controller frequency set to 50.0000Hz
+[component_container_isolated-5] [INFO] [1793383113.429030954] [docking_server]: Created charging dock plugin nova_carter_dock of type opennav_docking::SimpleChargingDock
+[component_container_isolated-5] [INFO] [1793383113.433080535] [docking_server]: Loading docks from parameter file.
+[component_container_isolated-5] [INFO] [1793383113.434612778] [docking_server]: Docking Server has 1 dock types and 3 dock instances available.
+[component_container_isolated-5] [INFO] [1793383113.436438544] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[component_container_isolated-5] [INFO] [1793383113.436635963] [controller_server]: Activating
+[component_container_isolated-5] [INFO] [1793383113.436696675] [local_costmap.local_costmap]: Activating
+[component_container_isolated-5] [INFO] [1793383113.436710269] [local_costmap.local_costmap]: Checking transform
+[component_container_isolated-5] [INFO] [1793383113.436770479] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[parameter_bridge-4] [INFO] [1793383113.714857984] [ros_gz_bridge]: Creating GZ->ROS Bridge: [clock (gz.msgs.Clock) -> clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793383113.717630549] [ros_gz_bridge]: Creating GZ->ROS Bridge: [joint_states (gz.msgs.Model) -> joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793383113.720682322] [ros_gz_bridge]: Creating GZ->ROS Bridge: [odom (gz.msgs.Odometry) -> odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793383113.722325540] [ros_gz_bridge]: Creating GZ->ROS Bridge: [tf (gz.msgs.Pose_V) -> tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793383113.723865046] [ros_gz_bridge]: Creating ROS->GZ Bridge: [cmd_vel (geometry_msgs/msg/TwistStamped) -> cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793383113.724869785] [ros_gz_bridge]: Creating GZ->ROS Bridge: [imu (gz.msgs.IMU) -> imu (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793383113.725514064] [ros_gz_bridge]: Creating GZ->ROS Bridge: [scan (gz.msgs.LaserScan) -> scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[component_container_isolated-5] [INFO] [1793383113.936901617] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-5] [INFO] [1793383114.436921880] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_burger"]/link[@name="base_scan"]/sensor[@name="hls_lfcd_lds"]/gz_frame_id:/opt/ros/jazzy/share/turtlebot3_gazebo/models/turtlebot3_burger/model.sdf:L141]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[component_container_isolated-5] [INFO] [1793383114.936912303] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-5] [INFO] [1793383115.436969871] [local_costmap.local_costmap]: start
+[component_container_isolated-5] [INFO] [1793383115.503430300] [amcl]: createLaserObject
+[component_container_isolated-5] [INFO] [1793383115.639644330] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[component_container_isolated-5] [INFO] [1793383115.745867257] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[component_container_isolated-5] [INFO] [1793383115.745929383] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[component_container_isolated-5] [INFO] [1793383115.746330615] [smoother_server]: Activating
+[component_container_isolated-5] [INFO] [1793383115.746367723] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[component_container_isolated-5] [INFO] [1793383115.857032964] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[component_container_isolated-5] [INFO] [1793383115.857076499] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[component_container_isolated-5] [INFO] [1793383115.857344369] [planner_server]: Activating
+[component_container_isolated-5] [INFO] [1793383115.857384631] [global_costmap.global_costmap]: Activating
+[component_container_isolated-5] [INFO] [1793383115.857390204] [global_costmap.global_costmap]: Checking transform
+[component_container_isolated-5] [INFO] [1793383115.857399012] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-5] [INFO] [1793383116.357458581] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-5] [INFO] [1793383116.857462163] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-5] [WARN] [1793383117.287678578] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-5] [INFO] [1793383117.357466278] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-5] [INFO] [1793383117.845722218] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.845838129] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.576000 but the latest data is at time 2.560000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.845853017] [amcl]: Setting pose (2.576000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.846883202] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.846971686] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.577000 but the latest data is at time 2.560000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.846994748] [amcl]: Setting pose (2.577000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.847879583] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.847927363] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.578000 but the latest data is at time 2.560000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.847942289] [amcl]: Setting pose (2.579000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.848769469] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.848815753] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.579000 but the latest data is at time 2.560000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.848830255] [amcl]: Setting pose (2.579000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.850259069] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.850342647] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.581000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.850362753] [amcl]: Setting pose (2.581000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.851243925] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.851308708] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.582000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.851321968] [amcl]: Setting pose (2.582000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.852054595] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.852091094] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.583000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.852102408] [amcl]: Setting pose (2.583000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.853219118] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.853260353] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.584000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.853272228] [amcl]: Setting pose (2.584000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.854046482] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.854086187] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.585000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.854097430] [amcl]: Setting pose (2.585000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.854850278] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.854882721] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.585000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.854900657] [amcl]: Setting pose (2.585000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.855689553] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.855731096] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.586000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.855742274] [amcl]: Setting pose (2.586000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.856502848] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.856543771] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.587000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.856577958] [amcl]: Setting pose (2.587000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.857313900] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.857364440] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.588000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.857370018] [amcl]: Setting pose (2.588000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.857463392] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-5] [INFO] [1793383117.857853232] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.857863511] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.588000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.857866834] [amcl]: Setting pose (2.588000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.858574760] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.858589779] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.589000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.858593151] [amcl]: Setting pose (2.589000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.859279483] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.859325873] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.590000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.859331028] [amcl]: Setting pose (2.590000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.860226260] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.860267346] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.591000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.860272713] [amcl]: Setting pose (2.591000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.860863213] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.860873805] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.591000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.860877178] [amcl]: Setting pose (2.591000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.861606767] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.861617885] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.592000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.861621467] [amcl]: Setting pose (2.592000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.862485854] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.862497614] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.593000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.862513771] [amcl]: Setting pose (2.593000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.863495571] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.863507619] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.594000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.863510627] [amcl]: Setting pose (2.594000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.864526849] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.864538699] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.595000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.864541675] [amcl]: Setting pose (2.595000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.866348551] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.866435860] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.597000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.866445858] [amcl]: Setting pose (2.597000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.867985719] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.868029795] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.598000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.868037336] [amcl]: Setting pose (2.598000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.869576707] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.869662858] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.600000 but the latest data is at time 2.580000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.869704089] [amcl]: Setting pose (2.600000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.871221387] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.871292480] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.602000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.871302969] [amcl]: Setting pose (2.602000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.871782895] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.871797760] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.602000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.871801595] [amcl]: Setting pose (2.602000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.872810462] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.872831551] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.603000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.872835671] [amcl]: Setting pose (2.603000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.873719404] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.873736716] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.604000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.873740990] [amcl]: Setting pose (2.604000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.874724755] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.874748318] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.605000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.874772501] [amcl]: Setting pose (2.605000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.875682350] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.875705440] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.606000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.875710403] [amcl]: Setting pose (2.606000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.876631831] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.876658760] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.607000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.876669517] [amcl]: Setting pose (2.607000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.877746915] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.877770106] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.608000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.877775162] [amcl]: Setting pose (2.608000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.878798372] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.878842105] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.609000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.878848662] [amcl]: Setting pose (2.609000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.879910381] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.879951859] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.610000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.879960020] [amcl]: Setting pose (2.610000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.881000376] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.881030064] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.611000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.881036098] [amcl]: Setting pose (2.611000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.882238149] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.882289247] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.613000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.882297225] [amcl]: Setting pose (2.613000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.883957065] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.884015972] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.614000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.884054067] [amcl]: Setting pose (2.614000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.885215903] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.885248900] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.616000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.885255796] [amcl]: Setting pose (2.616000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.886307884] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.886357166] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.617000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.886383946] [amcl]: Setting pose (2.617000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.887423187] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.887463580] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.618000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.887469618] [amcl]: Setting pose (2.618000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.888538093] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.888568162] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.619000 but the latest data is at time 2.600000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.888572974] [amcl]: Setting pose (2.619000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.890378853] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.890459160] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.621000 but the latest data is at time 2.620000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.890470045] [amcl]: Setting pose (2.621000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.892031892] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.892073153] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.622000 but the latest data is at time 2.620000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.892080456] [amcl]: Setting pose (2.622000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.893303573] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.893377457] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.624000 but the latest data is at time 2.620000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.893386696] [amcl]: Setting pose (2.624000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.894530796] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.894577525] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.625000 but the latest data is at time 2.620000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.894584386] [amcl]: Setting pose (2.625000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.895827097] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.895878772] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.626000 but the latest data is at time 2.620000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.895885496] [amcl]: Setting pose (2.626000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.896996995] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.897032013] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.627000 but the latest data is at time 2.620000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.897037912] [amcl]: Setting pose (2.627000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.898233088] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.898262173] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.629000 but the latest data is at time 2.620000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.898267684] [amcl]: Setting pose (2.629000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.899849415] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.899963441] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 2.630000 but the latest data is at time 2.620000, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.900015255] [amcl]: Setting pose (2.630000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.909130012] [amcl]: initialPoseReceived
+[component_container_isolated-5] [WARN] [1793383117.909210263] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation at time 2.640000, but only time 3.100000 is in the buffer, when looking up transform from frame [base_footprint] to frame [odom])
+[component_container_isolated-5] [INFO] [1793383117.909249493] [amcl]: Setting pose (2.640000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383117.910089316] [amcl]: initialPoseReceived
+[component_container_isolated-5] [INFO] [1793383117.910141504] [amcl]: Setting pose (2.640000): -2.000 -0.500 0.000
+[component_container_isolated-5] [INFO] [1793383118.357475456] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 3.080000 but the earliest data is at time 3.100000, when looking up transform from frame [base_link] to frame [map]
+[component_container_isolated-5] [INFO] [1793383118.857555339] [global_costmap.global_costmap]: start
+[component_container_isolated-5] [INFO] [1793383119.909131515] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[component_container_isolated-5] [INFO] [1793383119.910881124] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[component_container_isolated-5] [INFO] [1793383120.015173495] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[component_container_isolated-5] [INFO] [1793383120.015216642] [lifecycle_manager_navigation]: [34m[1mActivating route_server[0m[0m
+[component_container_isolated-5] [INFO] [1793383120.015543550] [route_server]: Activating
+[component_container_isolated-5] [INFO] [1793383120.015789176] [route_server]: Creating bond (route_server) to lifecycle manager.
+[component_container_isolated-5] [INFO] [1793383120.123148682] [lifecycle_manager_navigation]: Server route_server connected with bond.
+[component_container_isolated-5] [INFO] [1793383120.123191687] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[component_container_isolated-5] [INFO] [1793383120.123478658] [behavior_server]: Activating
+[component_container_isolated-5] [INFO] [1793383120.123497863] [behavior_server]: Activating spin
+[component_container_isolated-5] [INFO] [1793383120.123524213] [behavior_server]: Activating backup
+[component_container_isolated-5] [INFO] [1793383120.123530550] [behavior_server]: Activating drive_on_heading
+[component_container_isolated-5] [INFO] [1793383120.123536800] [behavior_server]: Activating wait
+[component_container_isolated-5] [INFO] [1793383120.123542729] [behavior_server]: Activating assisted_teleop
+[component_container_isolated-5] [INFO] [1793383120.123552553] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[component_container_isolated-5] [INFO] [1793383120.227909891] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[component_container_isolated-5] [INFO] [1793383120.227944804] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[component_container_isolated-5] [INFO] [1793383120.228303640] [velocity_smoother]: Activating
+[component_container_isolated-5] [INFO] [1793383120.228373334] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[component_container_isolated-5] [INFO] [1793383120.336394365] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[component_container_isolated-5] [INFO] [1793383120.336494107] [lifecycle_manager_navigation]: [34m[1mActivating collision_monitor[0m[0m
+[component_container_isolated-5] [INFO] [1793383120.336958205] [collision_monitor]: Activating
+[component_container_isolated-5] [INFO] [1793383120.337083196] [collision_monitor]: Creating bond (collision_monitor) to lifecycle manager.
+[component_container_isolated-5] [INFO] [1793383120.445248371] [lifecycle_manager_navigation]: Server collision_monitor connected with bond.
+[component_container_isolated-5] [INFO] [1793383120.445302798] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[component_container_isolated-5] [INFO] [1793383120.445674386] [bt_navigator]: Activating
+[component_container_isolated-5] [INFO] [1793383120.529032049] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[component_container_isolated-5] [INFO] [1793383120.636235483] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[component_container_isolated-5] [INFO] [1793383120.636290082] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[component_container_isolated-5] [INFO] [1793383120.636694161] [waypoint_follower]: Activating
+[component_container_isolated-5] [INFO] [1793383120.636757459] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[component_container_isolated-5] [INFO] [1793383120.746583846] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[component_container_isolated-5] [INFO] [1793383120.746634361] [lifecycle_manager_navigation]: [34m[1mActivating docking_server[0m[0m
+[component_container_isolated-5] [INFO] [1793383120.747070226] [docking_server]: Activating docking_server
+[component_container_isolated-5] [INFO] [1793383120.761054716] [docking_server]: Creating bond (docking_server) to lifecycle manager.
+[component_container_isolated-5] [INFO] [1793383120.868662137] [lifecycle_manager_navigation]: Server docking_server connected with bond.
+[component_container_isolated-5] [INFO] [1793383120.868722459] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-5] [INFO] [1793383120.868735582] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[component_container_isolated-5] [INFO] [1793383123.917270867] [bt_navigator]: Begin navigating from current location (-2.00, -0.50) to (1.50, 1.50)
+[component_container_isolated-5] [INFO] [1793383123.938126399] [controller_server]: Received a goal, begin computing control effort.
+[component_container_isolated-5] [WARN] [1793383123.938193078] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded goal_checker . This warning will appear once.
+[component_container_isolated-5] [WARN] [1793383123.938216504] [controller_server]: No progress checker was specified in parameter 'current_progress_checker'. Server will use only plugin loaded progress_checker . This warning will appear once.
+[parameter_bridge-4] [INFO] [1793383124.000546171] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/TwistStamped to Gazebo gz.msgs.Twist (showing msg only once per type)
+[component_container_isolated-5] [INFO] [1793383125.038502845] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383126.038492803] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383127.038495806] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383128.138499451] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383129.138520077] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383130.138503857] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383131.138471966] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383132.238466036] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383133.238465101] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383134.238470377] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383135.338481445] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383136.338494154] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383137.338485049] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383138.338475323] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383139.438475937] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383140.438472523] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383141.438472439] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383142.438482010] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383143.538499348] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383144.538469900] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383145.538497195] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383146.638462007] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383147.638471451] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383148.638474992] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383149.638465652] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383150.738463060] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383151.738461572] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383152.738467595] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383153.838463869] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383154.838463853] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383154.938514026] [controller_server]: Reached the goal!
+[component_container_isolated-5] [INFO] [1793383154.967627050] [bt_navigator]: Goal succeeded
+[component_container_isolated-5] [INFO] [1793383154.971763310] [bt_navigator]: Begin navigating from current location (1.50, 1.50) to (-1.50, 1.50)
+[component_container_isolated-5] [INFO] [1793383154.992321371] [controller_server]: Received a goal, begin computing control effort.
+[component_container_isolated-5] [INFO] [1793383156.092542580] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383157.092551620] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383158.092552307] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383159.192541793] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383160.192545930] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383161.192543478] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383162.192543285] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383163.292551222] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383164.292551340] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383165.292544102] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383166.392554158] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383167.392546601] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383168.392576584] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383169.392544362] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383170.492541963] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383171.492543288] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383172.492541112] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383173.592551325] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383174.592549246] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383175.592541298] [controller_server]: Passing new path to controller.
+[component_container_isolated-5] [INFO] [1793383176.192579846] [controller_server]: Reached the goal!
+[component_container_isolated-5] [INFO] [1793383176.222096769] [bt_navigator]: Goal succeeded

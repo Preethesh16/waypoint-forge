@@ -1,0 +1,49 @@
+{
+  "initial_pose": [
+    -2.0,
+    -0.5,
+    0.0
+  ],
+  "goals": [
+    {
+      "goal": [
+        1.5,
+        1.5,
+        3.14159
+      ],
+      "result": "TaskResult.SUCCEEDED",
+      "succeeded": true,
+      "timed_out": false,
+      "wall_seconds": 31.456,
+      "cancellation": null,
+      "distance_m": 5.267,
+      "nearest_scan_return_m": 0.35981595516204834,
+      "final_amcl_xy": [
+        1.494863480869273,
+        1.5092160975987297
+      ],
+      "estimated_goal_error_m": 0.010550842797124598
+    },
+    {
+      "goal": [
+        -1.5,
+        1.5,
+        -1.5708
+      ],
+      "result": "TaskResult.SUCCEEDED",
+      "succeeded": true,
+      "timed_out": false,
+      "wall_seconds": 19.585,
+      "cancellation": null,
+      "distance_m": 3.091,
+      "nearest_scan_return_m": 0.3150992691516876,
+      "final_amcl_xy": [
+        -1.467304454257127,
+        1.5089860906940282
+      ],
+      "estimated_goal_error_m": 0.0339079420989479
+    }
+  ],
+  "all_succeeded": true,
+  "note": "Distance is odometry-derived. Scan minimum is sensor range, not footprint clearance or a collision guarantee."
+}

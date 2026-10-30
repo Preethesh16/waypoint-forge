@@ -102,3 +102,32 @@ ffmpeg -v error -i evidence/demo.mp4 -f null -
 - Localization errors are AMCL estimates, not Gazebo ground truth. Minimum scan
   return is sensor range, not footprint clearance. No physical robot or dynamic
   obstacle scenario was tested.
+
+## v1.1 repeated-run verification
+
+The new bounded benchmark independently launched six fresh simulations: five
+standard two-goal missions and one distinct three-goal mission through an
+interior gap and lower stations. All **6/6 trials and 13/13 goals succeeded**.
+The standard-route summed goal-time median was **50.224 s**, range
+**49.642–52.322 s**; the alternative route took **54.281 s**. All post-run health
+checks passed, each initial clock was fresh and uniquely published, and cleanup
+left no live owned simulator processes. Source-file hashes were unchanged.
+
+Schema-2 evidence was checked directly: all 13 final pose estimates were fresh,
+trajectory arrays were populated without truncation, and feedback reported zero
+recoveries. The maximum fresh estimated goal error was 0.1420 m. This result is
+not directly comparable to the v1.0 AMCL-only metric because the new report can
+choose a fresher navigation-feedback pose. Neither is ground truth.
+
+See [benchmark protocol and full measurements](benchmark.md) and
+[`evidence/v1.1/benchmark/summary.json`](../evidence/v1.1/benchmark/summary.json).
+Five observed repeat successes are not a demonstrated reliability probability;
+all trials share one host, map and configuration. The enhanced video and optional crate experiment are reported separately when complete.
+
+The v1.1 independent regression pass completed **21/21 tests in 11.687 s**.
+It includes real isolated-ROS interruption/status tests plus input, evidence
+freshness, benchmark aggregation and occupancy-grid extraction checks. See
+[`evidence/v1.1/regression-tests.txt`](../evidence/v1.1/regression-tests.txt).
+The benchmark plot was independently reviewed against the raw values and map
+geometry. Its source now refuses reports without confirmed unchanged hashes;
+the displayed artifact has unchanged hashes and needs no regeneration.

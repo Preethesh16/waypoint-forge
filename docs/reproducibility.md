@@ -6,6 +6,20 @@ different from successfully building the final Dockerfile on a clean machine.
 The `Clean build and real Nav2 simulation` workflow closes that gap only when its
 actual run is green. A checked-in workflow alone is not evidence of a passing run.
 
+## Verified initial clean run
+
+[Actions run 41102204300](https://github.com/Preethesh16/waypoint-forge/actions/runs/41102204300)
+completed successfully for commit `c05b6d5e275b4d31411873ffae578e9d44e8c495`.
+The downloaded artifacts confirm an uncached Docker build, four real CLI tests,
+two successful autonomous goals (31.456 s and 19.585 s wall time), and all 15 live
+diagnostic checks passing. Selected durable evidence and original artifact-file
+SHA256 hashes are archived in `evidence/v1.1/ci-initial/`.
+
+This initial CI run predates the final v1.1 mission evidence, benchmark and dynamic
+obstacle additions. It validates the pinned environment and original mission;
+**exact-final-source CI remains pending** until a later run verifies that commit.
+The artifact’s full build/runtime logs remain linked from the run while retained.
+
 ## What is pinned
 
 - The Ubuntu base uses the official registry manifest digest for `24.04`,

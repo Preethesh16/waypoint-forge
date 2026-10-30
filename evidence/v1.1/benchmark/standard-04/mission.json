@@ -1,0 +1,726 @@
+{
+  "schema_version": 2,
+  "initial_pose": [
+    -2.0,
+    -0.5,
+    0.0
+  ],
+  "initial_pose_published": true,
+  "initialize_only": false,
+  "initialization_succeeded": true,
+  "goals": [
+    {
+      "goal": [
+        1.5,
+        1.5,
+        3.141592653589793
+      ],
+      "result": "TaskResult.SUCCEEDED",
+      "succeeded": true,
+      "timed_out": false,
+      "wall_seconds": 31.054,
+      "sim_seconds": 33.031,
+      "sim_start_seconds": 6.645,
+      "sim_end_seconds": 39.676,
+      "cancellation": null,
+      "distance_m": 5.295,
+      "nearest_scan_return_m": 0.35409989953041077,
+      "final_amcl_xy": [
+        1.495877649823918,
+        1.504488162470535
+      ],
+      "final_amcl_estimate": {
+        "source": "amcl",
+        "frame": "map",
+        "xy": [
+          1.495877649823918,
+          1.504488162470535
+        ],
+        "stamp_sim_seconds": 39.0,
+        "age_sim_seconds": 0.6760000000000019,
+        "age_wall_seconds": 0.6450838170003408,
+        "fresh": true
+      },
+      "final_pose_estimate": {
+        "source": "nav2_feedback",
+        "frame": "map",
+        "xy": [
+          1.4958772042421844,
+          1.5044880147922108
+        ],
+        "stamp_sim_seconds": 39.64,
+        "age_sim_seconds": 0.036000000000001364,
+        "age_wall_seconds": 1.7226000636583194e-05,
+        "fresh": true
+      },
+      "estimated_goal_error_m": 0.0060942367558017956,
+      "feedback_samples": 366,
+      "max_recoveries": 0,
+      "last_feedback": {
+        "distance_remaining_m": 2.423443845600559e-07,
+        "number_of_recoveries": 0,
+        "navigation_time_seconds": 31.008,
+        "age_wall_seconds": 1.7226000636583194e-05
+      },
+      "trajectory": [
+        {
+          "source": "amcl",
+          "xy": [
+            -1.9346420269892985,
+            -0.4893618358075764
+          ],
+          "stamp_sim_seconds": 9.2,
+          "wall_seconds": 0.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.868809274732071,
+            -0.45482489737190995
+          ],
+          "stamp_sim_seconds": 9.6,
+          "wall_seconds": 1.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.8231035795832358,
+            -0.3889628568837702
+          ],
+          "stamp_sim_seconds": 10.0,
+          "wall_seconds": 1.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.7928490467607752,
+            -0.3159031314165932
+          ],
+          "stamp_sim_seconds": 10.4,
+          "wall_seconds": 2.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.7741254371735944,
+            -0.18360375475553875
+          ],
+          "stamp_sim_seconds": 11.0,
+          "wall_seconds": 3.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.7818969725242484,
+            0.05360279959296768
+          ],
+          "stamp_sim_seconds": 12.2,
+          "wall_seconds": 4.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.785944629889829,
+            0.33955988849741414
+          ],
+          "stamp_sim_seconds": 13.6,
+          "wall_seconds": 5.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.785944629889829,
+            0.33955988849741414
+          ],
+          "stamp_sim_seconds": 13.6,
+          "wall_seconds": 6.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.7781059312261425,
+            0.6198912132144035
+          ],
+          "stamp_sim_seconds": 15.0,
+          "wall_seconds": 7.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.735084074617744,
+            0.8734838675730967
+          ],
+          "stamp_sim_seconds": 16.2,
+          "wall_seconds": 8.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.735084074617744,
+            0.8734838675730967
+          ],
+          "stamp_sim_seconds": 16.2,
+          "wall_seconds": 8.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.5918290904221126,
+            1.2702672974015177
+          ],
+          "stamp_sim_seconds": 18.2,
+          "wall_seconds": 9.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.5918290904221126,
+            1.2702672974015177
+          ],
+          "stamp_sim_seconds": 18.2,
+          "wall_seconds": 10.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.4747578347756236,
+            1.4029584513099627
+          ],
+          "stamp_sim_seconds": 19.0,
+          "wall_seconds": 10.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.300650643886949,
+            1.509338894179116
+          ],
+          "stamp_sim_seconds": 20.0,
+          "wall_seconds": 11.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.300650643886949,
+            1.509338894179116
+          ],
+          "stamp_sim_seconds": 20.0,
+          "wall_seconds": 12.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.0545577585332992,
+            1.6267961283490844
+          ],
+          "stamp_sim_seconds": 21.4,
+          "wall_seconds": 13.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.0545577585332992,
+            1.6267961283490844
+          ],
+          "stamp_sim_seconds": 21.4,
+          "wall_seconds": 13.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -0.8547575070671422,
+            1.6618349240884707
+          ],
+          "stamp_sim_seconds": 22.4,
+          "wall_seconds": 14.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -0.8547575070671422,
+            1.6618349240884707
+          ],
+          "stamp_sim_seconds": 22.4,
+          "wall_seconds": 15.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -0.5902319446696961,
+            1.6785570529270546
+          ],
+          "stamp_sim_seconds": 23.8,
+          "wall_seconds": 16.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -0.3333139698022956,
+            1.720798655685307
+          ],
+          "stamp_sim_seconds": 25.0,
+          "wall_seconds": 16.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -0.3333139698022956,
+            1.720798655685307
+          ],
+          "stamp_sim_seconds": 25.0,
+          "wall_seconds": 17.161
+        },
+        {
+          "source": "nav2_feedback",
+          "xy": [
+            0.029924877646434478,
+            1.7494244131674248
+          ],
+          "stamp_sim_seconds": 26.78,
+          "wall_seconds": 18.161
+        },
+        {
+          "source": "nav2_feedback",
+          "xy": [
+            0.228340952929309,
+            1.7504320597047762
+          ],
+          "stamp_sim_seconds": 27.78,
+          "wall_seconds": 19.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            0.16426156326593702,
+            1.7534973238001081
+          ],
+          "stamp_sim_seconds": 27.6,
+          "wall_seconds": 20.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            0.41982227480882184,
+            1.7528776054157293
+          ],
+          "stamp_sim_seconds": 29.0,
+          "wall_seconds": 20.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            0.41982227480882184,
+            1.7528776054157293
+          ],
+          "stamp_sim_seconds": 29.0,
+          "wall_seconds": 21.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            0.7165529614980244,
+            1.7000584913782724
+          ],
+          "stamp_sim_seconds": 30.4,
+          "wall_seconds": 22.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            0.9933673864876186,
+            1.6328580326795583
+          ],
+          "stamp_sim_seconds": 31.8,
+          "wall_seconds": 23.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            0.9933673864876186,
+            1.6328580326795583
+          ],
+          "stamp_sim_seconds": 31.8,
+          "wall_seconds": 24.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            1.2851532418449072,
+            1.5504796424664917
+          ],
+          "stamp_sim_seconds": 33.2,
+          "wall_seconds": 25.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            1.2851532418449072,
+            1.5504796424664917
+          ],
+          "stamp_sim_seconds": 33.2,
+          "wall_seconds": 25.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            1.2851532418449072,
+            1.5504796424664917
+          ],
+          "stamp_sim_seconds": 33.2,
+          "wall_seconds": 26.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            1.4655675511501223,
+            1.502996625381446
+          ],
+          "stamp_sim_seconds": 36.2,
+          "wall_seconds": 27.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            1.4997865937683612,
+            1.4918756592633253
+          ],
+          "stamp_sim_seconds": 37.2,
+          "wall_seconds": 28.661
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            1.4993511246241338,
+            1.50387968725879
+          ],
+          "stamp_sim_seconds": 37.6,
+          "wall_seconds": 29.161
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            1.4741799242581197,
+            1.5166355888262684
+          ],
+          "stamp_sim_seconds": 38.4,
+          "wall_seconds": 30.161
+        }
+      ],
+      "trajectory_truncated": false
+    },
+    {
+      "goal": [
+        -1.5,
+        1.5,
+        -1.5707963267948966
+      ],
+      "result": "TaskResult.SUCCEEDED",
+      "succeeded": true,
+      "timed_out": false,
+      "wall_seconds": 21.268,
+      "sim_seconds": 21.253,
+      "sim_start_seconds": 39.676,
+      "sim_end_seconds": 60.929,
+      "cancellation": null,
+      "distance_m": 3.106,
+      "nearest_scan_return_m": 0.30796945095062256,
+      "final_amcl_xy": [
+        -1.4812162791475465,
+        1.5245399989263844
+      ],
+      "final_amcl_estimate": {
+        "source": "amcl",
+        "frame": "map",
+        "xy": [
+          -1.4812162791475465,
+          1.5245399989263844
+        ],
+        "stamp_sim_seconds": 60.6,
+        "age_sim_seconds": 0.3290000000000006,
+        "age_wall_seconds": 0.3150694959995235,
+        "fresh": true
+      },
+      "final_pose_estimate": {
+        "source": "nav2_feedback",
+        "frame": "map",
+        "xy": [
+          -1.4745491793570156,
+          1.531770470860186
+        ],
+        "stamp_sim_seconds": 60.9,
+        "age_sim_seconds": 0.029000000000003467,
+        "age_wall_seconds": 1.682599940977525e-05,
+        "fresh": true
+      },
+      "estimated_goal_error_m": 0.0407075802533053,
+      "feedback_samples": 248,
+      "max_recoveries": 0,
+      "last_feedback": {
+        "distance_remaining_m": 0.07071088999509811,
+        "number_of_recoveries": 0,
+        "navigation_time_seconds": 21.229,
+        "age_wall_seconds": 1.682599940977525e-05
+      },
+      "trajectory": [
+        {
+          "source": "amcl",
+          "xy": [
+            1.495877649823918,
+            1.504488162470535
+          ],
+          "stamp_sim_seconds": 39.0,
+          "wall_seconds": 0.0
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            1.4916230363983434,
+            1.50371366758347
+          ],
+          "stamp_sim_seconds": 40.0,
+          "wall_seconds": 0.606
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            1.348084772538912,
+            1.5118871005929218
+          ],
+          "stamp_sim_seconds": 40.6,
+          "wall_seconds": 1.106
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            1.181101369872949,
+            1.546578515595625
+          ],
+          "stamp_sim_seconds": 41.4,
+          "wall_seconds": 2.106
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            1.181101369872949,
+            1.546578515595625
+          ],
+          "stamp_sim_seconds": 41.4,
+          "wall_seconds": 2.606
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            0.9045673375189287,
+            1.6123401183423982
+          ],
+          "stamp_sim_seconds": 42.8,
+          "wall_seconds": 3.606
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            0.9045673375189287,
+            1.6123401183423982
+          ],
+          "stamp_sim_seconds": 42.8,
+          "wall_seconds": 4.106
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            0.6084297270720465,
+            1.6631752924515024
+          ],
+          "stamp_sim_seconds": 44.2,
+          "wall_seconds": 4.606
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            0.6084297270720465,
+            1.6631752924515024
+          ],
+          "stamp_sim_seconds": 44.2,
+          "wall_seconds": 5.606
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            0.33059518856315123,
+            1.7107183115661144
+          ],
+          "stamp_sim_seconds": 45.6,
+          "wall_seconds": 6.106
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            0.33059518856315123,
+            1.7107183115661144
+          ],
+          "stamp_sim_seconds": 45.6,
+          "wall_seconds": 7.106
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            0.03961923684422733,
+            1.7669315293490035
+          ],
+          "stamp_sim_seconds": 47.0,
+          "wall_seconds": 8.106
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            0.03961923684422733,
+            1.7669315293490035
+          ],
+          "stamp_sim_seconds": 47.0,
+          "wall_seconds": 8.606
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -0.22812587035856371,
+            1.795307257522738
+          ],
+          "stamp_sim_seconds": 48.4,
+          "wall_seconds": 9.606
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -0.22812587035856371,
+            1.795307257522738
+          ],
+          "stamp_sim_seconds": 48.4,
+          "wall_seconds": 10.106
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -0.5042654469711613,
+            1.7659425749881283
+          ],
+          "stamp_sim_seconds": 49.8,
+          "wall_seconds": 11.106
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -0.7538331252686667,
+            1.7212225976289666
+          ],
+          "stamp_sim_seconds": 51.0,
+          "wall_seconds": 12.106
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.0036318142238767,
+            1.6830759999182452
+          ],
+          "stamp_sim_seconds": 52.2,
+          "wall_seconds": 12.606
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.0036318142238767,
+            1.6830759999182452
+          ],
+          "stamp_sim_seconds": 52.2,
+          "wall_seconds": 13.606
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.2636411694234368,
+            1.612561303934035
+          ],
+          "stamp_sim_seconds": 53.6,
+          "wall_seconds": 14.106
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.2636411694234368,
+            1.612561303934035
+          ],
+          "stamp_sim_seconds": 53.6,
+          "wall_seconds": 14.606
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.2636411694234368,
+            1.612561303934035
+          ],
+          "stamp_sim_seconds": 53.6,
+          "wall_seconds": 15.606
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.456679504763721,
+            1.5344451001754216
+          ],
+          "stamp_sim_seconds": 57.0,
+          "wall_seconds": 17.606
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.4542957271702655,
+            1.5325827128863694
+          ],
+          "stamp_sim_seconds": 58.0,
+          "wall_seconds": 18.606
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.4542957271702655,
+            1.5325827128863694
+          ],
+          "stamp_sim_seconds": 58.0,
+          "wall_seconds": 19.606
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.4542957271702655,
+            1.5325827128863694
+          ],
+          "stamp_sim_seconds": 58.0,
+          "wall_seconds": 20.106
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.4745495546200387,
+            1.5317695662664663
+          ],
+          "stamp_sim_seconds": 59.8,
+          "wall_seconds": 20.606
+        },
+        {
+          "source": "amcl",
+          "xy": [
+            -1.4812162791475465,
+            1.5245399989263844
+          ],
+          "stamp_sim_seconds": 60.6,
+          "wall_seconds": 21.106
+        }
+      ],
+      "trajectory_truncated": false
+    }
+  ],
+  "all_succeeded": true,
+  "note": "Distance is odometry-derived. Final goal error uses a fresh map-frame feedback/AMCL estimate, not ground truth. Scan minimum is sensor range, not footprint clearance or a collision guarantee.",
+  "wall_seconds": 60.78,
+  "sim_seconds": 60.354,
+  "invalid_odom_samples": 0
+}

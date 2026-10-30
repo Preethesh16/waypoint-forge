@@ -1,0 +1,4 @@
+# Optional offline evidence plotting; not needed to run the ROS project.
+matplotlib==3.11.2
+PyYAML>=6.0,<7
+Pillow>=10,<13

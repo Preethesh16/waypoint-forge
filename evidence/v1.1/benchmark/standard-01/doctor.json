@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "interrupted": false,
+  "observation_wall_seconds": 3.0,
+  "checks": {
+    "clock_stream": {
+      "passed": true,
+      "topic": "/clock",
+      "samples": 2933,
+      "advancing": true,
+      "age_wall_seconds": 0.0005173070003365865,
+      "age_sim_seconds": 0.0,
+      "backward_jumps": 0
+    },
+    "scan_stream": {
+      "passed": true,
+      "topic": "/scan",
+      "samples": 15,
+      "advancing": true,
+      "age_wall_seconds": 0.13092615299956378,
+      "age_sim_seconds": 0.15200000000000102,
+      "backward_jumps": 0
+    },
+    "odom_stream": {
+      "passed": true,
+      "topic": "/odom",
+      "samples": 147,
+      "advancing": true,
+      "age_wall_seconds": 0.012476812999921094,
+      "age_sim_seconds": 0.012000000000000455,
+      "backward_jumps": 0
+    },
+    "scan_values": {
+      "passed": true,
+      "frame": "base_scan",
+      "total_beams": 360,
+      "valid_beams": 329,
+      "nearest_return_m": 0.4400313198566437
+    },
+    "odom_values": {
+      "passed": true,
+      "frame": "odom",
+      "child_frame": "base_footprint",
+      "quaternion_norm": 1.0
+    },
+    "tf:map<-odom": {
+      "passed": true,
+      "stamp_seconds": 63.3,
+      "age_sim_seconds": -0.347999999999999,
+      "dynamic": true
+    },
+    "tf:odom<-base_footprint": {
+      "passed": true,
+      "stamp_seconds": 62.94,
+      "age_sim_seconds": 0.012000000000000455,
+      "dynamic": true
+    },
+    "tf:base_footprint<-base_link": {
+      "passed": true,
+      "stamp_seconds": 0.0,
+      "age_sim_seconds": 62.952,
+      "dynamic": false
+    },
+    "tf:base_link<-base_scan": {
+      "passed": true,
+      "stamp_seconds": 0.0,
+      "age_sim_seconds": 62.952,
+      "dynamic": false
+    },
+    "lifecycle:amcl": {
+      "passed": true,
+      "state": {
+        "id": 3,
+        "label": "active"
+      },
+      "response_age_wall_seconds": 0.1414523769999505
+    },
+    "lifecycle:controller_server": {
+      "passed": true,
+      "state": {
+        "id": 3,
+        "label": "active"
+      },
+      "response_age_wall_seconds": 0.3612225890001355
+    },
+    "lifecycle:planner_server": {
+      "passed": true,
+      "state": {
+        "id": 3,
+        "label": "active"
+      },
+      "response_age_wall_seconds": 0.14140717200007202
+    },
+    "lifecycle:bt_navigator": {
+      "passed": true,
+      "state": {
+        "id": 3,
+        "label": "active"
+      },
+      "response_age_wall_seconds": 0.13740426799995475
+    },
+    "lifecycle:behavior_server": {
+      "passed": true,
+      "state": {
+        "id": 3,
+        "label": "active"
+      },
+      "response_age_wall_seconds": 0.1373556529997586
+    },
+    "navigate_to_pose_action": {
+      "passed": true,
+      "action": "/navigate_to_pose"
+    }
+  },
+  "scope": "Read-only snapshot after localization; does not prove navigation success or collision freedom."
+}

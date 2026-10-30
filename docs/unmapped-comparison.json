@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-30T18:07:23.089234+00:00",
+  "source_inputs": {
+    "baseline": {
+      "path": "evidence/v1.1/benchmark/standard-01/mission.json",
+      "sha256": "c8ca3653e2593fbacfa56e7bd84a729e373129ab8683fdeae1e7b9b9b4befcf8"
+    },
+    "crate_mission": {
+      "path": "evidence/v1.1/mission-demo.json",
+      "sha256": "085e6d6c06053ecd82bb9f4ffc2ff145afeace60854e323f43e09bbf7fad4720"
+    },
+    "crate_observation": {
+      "path": "evidence/v1.1/unmapped-observation.json",
+      "sha256": "8ae6fce2149c4bef692565a1b2418280acc82670358c20af6dccadeb6cbdfca6"
+    },
+    "crate_creation": {
+      "path": "evidence/v1.1/unmapped-spawn.json",
+      "sha256": "9ccbe0eb0f3ee3b9b8d8fe1188b60151b69f33f8c79898209c5759ed1c4d13a5"
+    }
+  },
+  "method": "For each goal, linearly interpolate y at x=0 between consecutive recorded map-frame estimated trajectory samples whose x values straddle zero. No interpolation is extrapolated. Distances use existing odometry metrics.",
+  "baseline": {
+    "all_succeeded": true,
+    "client_wall_seconds": 59.355,
+    "navigation_wall_seconds": 49.642,
+    "goals": [
+      {
+        "index": 1,
+        "goal": [
+          1.5,
+          1.5,
+          3.141592653589793
+        ],
+        "succeeded": true,
+        "odometry_distance_m": 5.458,
+        "wall_seconds": 29.965,
+        "sim_seconds": 31.943,
+        "estimated_goal_error_m": 0.14197744340584054,
+        "max_reported_recoveries": 0,
+        "trajectory_samples": 38,
+        "estimated_x_zero_crossings_y_m": [
+          1.752571979021361
+        ]
+      },
+      {
+        "index": 2,
+        "goal": [
+          -1.5,
+          1.5,
+          -1.5707963267948966
+        ],
+        "succeeded": true,
+        "odometry_distance_m": 3.198,
+        "wall_seconds": 19.677,
+        "sim_seconds": 19.645,
+        "estimated_goal_error_m": 0.04300517292970726,
+        "max_reported_recoveries": 0,
+        "trajectory_samples": 25,
+        "estimated_x_zero_crossings_y_m": [
+          1.7680043722784153
+        ]
+      }
+    ]
+  },
+  "crate": {
+    "all_succeeded": true,
+    "client_wall_seconds": 58.01,
+    "navigation_wall_seconds": 51.739,
+    "goals": [
+      {
+        "index": 1,
+        "goal": [
+          1.5,
+          1.5,
+          3.14159
+        ],
+        "succeeded": true,
+        "odometry_distance_m": 4.88,
+        "wall_seconds": 29.382,
+        "sim_seconds": 30.797,
+        "estimated_goal_error_m": 0.0336812699568584,
+        "max_reported_recoveries": 0,
+        "trajectory_samples": 33,
+        "estimated_x_zero_crossings_y_m": [
+          0.48269126271236135
+        ]
+      },
+      {
+        "index": 2,
+        "goal": [
+          -1.5,
+          1.5,
+          -1.5708
+        ],
+        "succeeded": true,
+        "odometry_distance_m": 3.406,
+        "wall_seconds": 22.357,
+        "sim_seconds": 21.82,
+        "estimated_goal_error_m": 0.024063432649512318,
+        "max_reported_recoveries": 0,
+        "trajectory_samples": 26,
+        "estimated_x_zero_crossings_y_m": [
+          2.1506106166675565
+        ]
+      }
+    ]
+  },
+  "costmap_observation": {
+    "passed": true,
+    "conditions": {
+      "static_map_region_free": true,
+      "live_costmap_region_lethal": true,
+      "live_costmap_advancing": true,
+      "live_costmap_fresh": true,
+      "simulation_clock_advancing": true
+    },
+    "static_probe_cells": 144,
+    "static_free_cells": 144,
+    "live_lethal_cells": 12,
+    "observation_wall_seconds": 11.301
+  },
+  "caveats": [
+    "One obstacle run versus one reference run, not a statistical or seeded causal comparison.",
+    "Map-frame traces are sampled localization/action-feedback estimates, not dense Gazebo ground truth. Repeated estimates may appear.",
+    "No minimum footprint clearance, obstacle identity, or collision-freedom guarantee follows from these metrics.",
+    "Rendering/load and localization differ between runs; timings are not an isolated performance comparison.",
+    "Recorded runs predate a telemetry-only callback ordering correction that prevents tiny negative live feedback ages. Navigation commands and parameters were unchanged; original evidence is retained verbatim."
+  ]
+}

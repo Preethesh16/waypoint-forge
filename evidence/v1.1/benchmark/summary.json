@@ -1,0 +1,341 @@
+{
+  "started_utc": "2026-10-30T17:54:46.908834+00:00",
+  "domain_id": 83,
+  "planned_runs": 6,
+  "host_platform": "Linux-7.2.8-arch1-1-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "source_sha256": {
+    "scripts/mission.py": "96792c8845a6b3ccea0ff3b999a42be8df6c1684ca2dd102c25436d2a86150ae",
+    "scripts/run.sh": "d8e18b5db4f68b135f7f1d51f630cca800777079d0bf4d8bdb9f0f1ac043b131",
+    "scripts/doctor.py": "83cf78433c0dddcc518ccbf18930851c4686aefb7a811c3fe175ee0160f0ee54",
+    "scripts/benchmark.py": "635b916987f1797c29b8394f8c23745653bbcd0a33366901fe9b4ef20537aba8",
+    "launch/demo.launch.py": "363b0cf716d2d12e4aee69e3336c8892564688fd3473cf19166a05cc5adc008d",
+    "config/nav2.yaml": "442170674ce58fa15a84f63d7c1b23b1fb8504832b076305a5e20c313632e42b"
+  },
+  "arguments": {
+    "runs": 5,
+    "include_challenge": true,
+    "domain_id": 83,
+    "output": "evidence/v1.1/benchmark",
+    "goal_timeout": 120,
+    "mission_timeout": 400,
+    "startup_timeout": 45,
+    "launch_arg": null
+  },
+  "runs": [
+    {
+      "scenario": "standard",
+      "trial": 1,
+      "requested_goals": [
+        [
+          1.5,
+          1.5,
+          3.141592653589793
+        ],
+        [
+          -1.5,
+          1.5,
+          -1.5707963267948966
+        ]
+      ],
+      "passed": true,
+      "clock_probe": {
+        "first": 0.002,
+        "last": 0.003,
+        "samples": 2,
+        "publisher_count": 1
+      },
+      "clock_fresh": true,
+      "mission_exit_code": 0,
+      "mission_wall_seconds": 59.924,
+      "mission_succeeded": true,
+      "goal_wall_seconds": 49.642,
+      "distance_m": 8.656,
+      "worst_estimated_goal_error_m": 0.14197744340584054,
+      "doctor_exit_code": 0,
+      "doctor_passed": true,
+      "simulation_cleanup": {
+        "wrapper_exit_code": 130,
+        "live_owned_pids": [],
+        "escalated": false,
+        "wall_seconds": 5.282
+      }
+    },
+    {
+      "scenario": "standard",
+      "trial": 2,
+      "requested_goals": [
+        [
+          1.5,
+          1.5,
+          3.141592653589793
+        ],
+        [
+          -1.5,
+          1.5,
+          -1.5707963267948966
+        ]
+      ],
+      "passed": true,
+      "clock_probe": {
+        "first": 0.002,
+        "last": 0.003,
+        "samples": 2,
+        "publisher_count": 1
+      },
+      "clock_fresh": true,
+      "mission_exit_code": 0,
+      "mission_wall_seconds": 59.025,
+      "mission_succeeded": true,
+      "goal_wall_seconds": 49.925,
+      "distance_m": 8.33,
+      "worst_estimated_goal_error_m": 0.04842604673107441,
+      "doctor_exit_code": 0,
+      "doctor_passed": true,
+      "simulation_cleanup": {
+        "wrapper_exit_code": 130,
+        "live_owned_pids": [],
+        "escalated": false,
+        "wall_seconds": 5.282
+      }
+    },
+    {
+      "scenario": "standard",
+      "trial": 3,
+      "requested_goals": [
+        [
+          1.5,
+          1.5,
+          3.141592653589793
+        ],
+        [
+          -1.5,
+          1.5,
+          -1.5707963267948966
+        ]
+      ],
+      "passed": true,
+      "clock_probe": {
+        "first": 0.002,
+        "last": 0.003,
+        "samples": 2,
+        "publisher_count": 1
+      },
+      "clock_fresh": true,
+      "mission_exit_code": 0,
+      "mission_wall_seconds": 60.974,
+      "mission_succeeded": true,
+      "goal_wall_seconds": 51.928,
+      "distance_m": 8.582,
+      "worst_estimated_goal_error_m": 0.08075730891138987,
+      "doctor_exit_code": 0,
+      "doctor_passed": true,
+      "simulation_cleanup": {
+        "wrapper_exit_code": 130,
+        "live_owned_pids": [],
+        "escalated": false,
+        "wall_seconds": 5.286
+      }
+    },
+    {
+      "scenario": "standard",
+      "trial": 4,
+      "requested_goals": [
+        [
+          1.5,
+          1.5,
+          3.141592653589793
+        ],
+        [
+          -1.5,
+          1.5,
+          -1.5707963267948966
+        ]
+      ],
+      "passed": true,
+      "clock_probe": {
+        "first": 0.002,
+        "last": 0.003,
+        "samples": 2,
+        "publisher_count": 1
+      },
+      "clock_fresh": true,
+      "mission_exit_code": 0,
+      "mission_wall_seconds": 61.327,
+      "mission_succeeded": true,
+      "goal_wall_seconds": 52.322,
+      "distance_m": 8.401,
+      "worst_estimated_goal_error_m": 0.0407075802533053,
+      "doctor_exit_code": 0,
+      "doctor_passed": true,
+      "simulation_cleanup": {
+        "wrapper_exit_code": 130,
+        "live_owned_pids": [],
+        "escalated": false,
+        "wall_seconds": 5.337
+      }
+    },
+    {
+      "scenario": "standard",
+      "trial": 5,
+      "requested_goals": [
+        [
+          1.5,
+          1.5,
+          3.141592653589793
+        ],
+        [
+          -1.5,
+          1.5,
+          -1.5707963267948966
+        ]
+      ],
+      "passed": true,
+      "clock_probe": {
+        "first": 0.002,
+        "last": 0.003,
+        "samples": 2,
+        "publisher_count": 1
+      },
+      "clock_fresh": true,
+      "mission_exit_code": 0,
+      "mission_wall_seconds": 59.275,
+      "mission_succeeded": true,
+      "goal_wall_seconds": 50.224,
+      "distance_m": 8.437,
+      "worst_estimated_goal_error_m": 0.02692719601623775,
+      "doctor_exit_code": 0,
+      "doctor_passed": true,
+      "simulation_cleanup": {
+        "wrapper_exit_code": 130,
+        "live_owned_pids": [],
+        "escalated": false,
+        "wall_seconds": 5.285
+      }
+    },
+    {
+      "scenario": "interior-and-lower-stations",
+      "trial": 1,
+      "requested_goals": [
+        [
+          0.5,
+          0.5,
+          0.0
+        ],
+        [
+          1.5,
+          -1.5,
+          -1.5707963267948966
+        ],
+        [
+          -1.5,
+          -1.5,
+          3.141592653589793
+        ]
+      ],
+      "passed": true,
+      "clock_probe": {
+        "first": 0.002,
+        "last": 0.003,
+        "samples": 2,
+        "publisher_count": 1
+      },
+      "clock_fresh": true,
+      "mission_exit_code": 0,
+      "mission_wall_seconds": 63.38,
+      "mission_succeeded": true,
+      "goal_wall_seconds": 54.281,
+      "distance_m": 9.65,
+      "worst_estimated_goal_error_m": 0.1410555731080831,
+      "doctor_exit_code": 0,
+      "doctor_passed": true,
+      "simulation_cleanup": {
+        "wrapper_exit_code": 130,
+        "live_owned_pids": [],
+        "escalated": false,
+        "wall_seconds": 5.283
+      }
+    }
+  ],
+  "interrupted": false,
+  "scope": "Repeated simulation observations on one host/map/configuration. Not a reliability probability or hardware claim. Pose errors are estimates, not ground truth.",
+  "summary": {
+    "interior-and-lower-stations": {
+      "attempted": 1,
+      "passed": 1,
+      "observed_success_fraction": 1.0,
+      "complete_successful_run_wall_seconds": {
+        "count": 1,
+        "min": 63.38,
+        "median": 63.38,
+        "mean": 63.38,
+        "max": 63.38
+      },
+      "summed_goal_wall_seconds": {
+        "count": 1,
+        "min": 54.281,
+        "median": 54.281,
+        "mean": 54.281,
+        "max": 54.281
+      },
+      "odometry_distance_m": {
+        "count": 1,
+        "min": 9.65,
+        "median": 9.65,
+        "mean": 9.65,
+        "max": 9.65
+      },
+      "worst_estimated_goal_error_m": {
+        "count": 1,
+        "min": 0.1410555731080831,
+        "median": 0.1410555731080831,
+        "mean": 0.1410555731080831,
+        "max": 0.1410555731080831
+      }
+    },
+    "standard": {
+      "attempted": 5,
+      "passed": 5,
+      "observed_success_fraction": 1.0,
+      "complete_successful_run_wall_seconds": {
+        "count": 5,
+        "min": 59.025,
+        "median": 59.924,
+        "mean": 60.105,
+        "max": 61.327
+      },
+      "summed_goal_wall_seconds": {
+        "count": 5,
+        "min": 49.642,
+        "median": 50.224,
+        "mean": 50.8082,
+        "max": 52.322
+      },
+      "odometry_distance_m": {
+        "count": 5,
+        "min": 8.33,
+        "median": 8.437,
+        "mean": 8.4812,
+        "max": 8.656
+      },
+      "worst_estimated_goal_error_m": {
+        "count": 5,
+        "min": 0.02692719601623775,
+        "median": 0.04842604673107441,
+        "mean": 0.06775911506356957,
+        "max": 0.14197744340584054
+      }
+    }
+  },
+  "all_planned_passed": true,
+  "finished_utc": "2026-10-30T18:02:16.654275+00:00",
+  "final_source_sha256": {
+    "scripts/mission.py": "96792c8845a6b3ccea0ff3b999a42be8df6c1684ca2dd102c25436d2a86150ae",
+    "scripts/run.sh": "d8e18b5db4f68b135f7f1d51f630cca800777079d0bf4d8bdb9f0f1ac043b131",
+    "scripts/doctor.py": "83cf78433c0dddcc518ccbf18930851c4686aefb7a811c3fe175ee0160f0ee54",
+    "scripts/benchmark.py": "635b916987f1797c29b8394f8c23745653bbcd0a33366901fe9b4ef20537aba8",
+    "launch/demo.launch.py": "363b0cf716d2d12e4aee69e3336c8892564688fd3473cf19166a05cc5adc008d",
+    "config/nav2.yaml": "442170674ce58fa15a84f63d7c1b23b1fb8504832b076305a5e20c313632e42b"
+  },
+  "source_unchanged": true
+}
