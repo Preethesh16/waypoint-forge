@@ -1,5 +1,6 @@
-# Pins match the successful local ROS/Gazebo run; see docs/reproducibility.md.
-FROM ubuntu:24.04@sha256:008173c23f95b170204355c12626cb5a965d779a7e1283b09e9cffbb1bf33ca3
+# ROS pins match the successful local run; base digest is registry-verified.
+# The clean CI run validates this combination; see docs/reproducibility.md.
+FROM ubuntu:24.04@sha256:fe81560990fae86dc4743202b2cb4d3df98d0bcf949173cecef15ce1127ef852
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates \
     && curl -fsSL https://raw.githubusercontent.com/ros/rosdistro/36b9c28fdda0a50288797399da4b5fa1ef0ff81a/ros.key \
