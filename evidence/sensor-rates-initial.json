@@ -1,0 +1,45 @@
+{
+  "topic_types": {
+    "/clock": [
+      "rosgraph_msgs/msg/Clock"
+    ],
+    "/cmd_vel": [
+      "geometry_msgs/msg/TwistStamped"
+    ],
+    "/cmd_vel_nav": [
+      "geometry_msgs/msg/TwistStamped"
+    ],
+    "/odom": [
+      "nav_msgs/msg/Odometry"
+    ],
+    "/plan": [
+      "nav_msgs/msg/Path"
+    ],
+    "/scan": [
+      "sensor_msgs/msg/LaserScan"
+    ]
+  },
+  "streams": {
+    "scan": {
+      "samples": 49,
+      "wall_hz": 4.932163422456982,
+      "sim_hz": 4.999999999999999,
+      "max_sim_gap": 0.20000000000000284,
+      "min_sim_gap": 0.19999999999999574
+    },
+    "odom": {
+      "samples": 481,
+      "wall_hz": 48.69025758763073,
+      "sim_hz": 49.38271604938272,
+      "max_sim_gap": 0.09999999999999432,
+      "min_sim_gap": 0.01999999999999602
+    },
+    "clock": {
+      "samples": 9409,
+      "wall_hz": 951.949970773582,
+      "sim_hz": 965.5172413793103,
+      "max_sim_gap": 0.10600000000000165,
+      "min_sim_gap": 0.0009999999999976694
+    }
+  }
+}

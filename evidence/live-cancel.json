@@ -1,0 +1,18 @@
+{
+  "signal": "SIGINT",
+  "target_pid": 14719,
+  "sent_after_seconds": 1.0078640829997312,
+  "status_events": [
+    [
+      1.245768816999771,
+      [
+        5
+      ]
+    ]
+  ],
+  "terminal_canceled_observed": true,
+  "final_window_samples": 101,
+  "final_max_linear_speed_m_s": 0.0,
+  "final_max_angular_speed_rad_s": 0.0,
+  "robot_settled": true
+}

@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+*.log
+evidence/*.mp4
+evidence/*.mkv

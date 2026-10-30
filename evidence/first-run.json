@@ -1,0 +1,16 @@
+{
+  "initial_pose": [
+    -2.0,
+    -0.5,
+    0.0
+  ],
+  "goals": [],
+  "all_succeeded": false,
+  "note": "Distance is odometry-derived. Scan minimum is sensor range, not footprint clearance or a collision guarantee.",
+  "interrupted": true,
+  "cancellation": {
+    "requested": true,
+    "response_received": true,
+    "terminal_result_received": true
+  }
+}

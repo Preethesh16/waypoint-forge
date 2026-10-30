@@ -1,0 +1,92 @@
+{
+  "clock_publishers": [
+    {
+      "node": "ros_gz_bridge",
+      "namespace": "/",
+      "type": "rosgraph_msgs/msg/Clock"
+    }
+  ],
+  "parameters": {
+    "amcl": {
+      "use_sim_time": {
+        "bool": true,
+        "double": 0.0,
+        "type": 1
+      }
+    },
+    "controller_server": {
+      "use_sim_time": {
+        "bool": true,
+        "double": 0.0,
+        "type": 1
+      }
+    },
+    "planner_server": {
+      "use_sim_time": {
+        "bool": true,
+        "double": 0.0,
+        "type": 1
+      }
+    },
+    "bt_navigator": {
+      "use_sim_time": {
+        "bool": true,
+        "double": 0.0,
+        "type": 1
+      }
+    },
+    "collision_monitor": {
+      "use_sim_time": {
+        "bool": true,
+        "double": 0.0,
+        "type": 1
+      },
+      "scan.source_timeout": {
+        "bool": false,
+        "double": 0.5,
+        "type": 3
+      }
+    },
+    "velocity_smoother": {
+      "use_sim_time": {
+        "bool": true,
+        "double": 0.0,
+        "type": 1
+      }
+    },
+    "robot_state_publisher": {
+      "use_sim_time": {
+        "bool": true,
+        "double": 0.0,
+        "type": 1
+      }
+    },
+    "rviz2": {
+      "use_sim_time": {
+        "bool": true,
+        "double": 0.0,
+        "type": 1
+      }
+    }
+  },
+  "topic_types": {
+    "/clock": [
+      "rosgraph_msgs/msg/Clock"
+    ],
+    "/cmd_vel": [
+      "geometry_msgs/msg/TwistStamped"
+    ],
+    "/cmd_vel_nav": [
+      "geometry_msgs/msg/TwistStamped"
+    ],
+    "/odom": [
+      "nav_msgs/msg/Odometry"
+    ],
+    "/plan": [
+      "nav_msgs/msg/Path"
+    ],
+    "/scan": [
+      "sensor_msgs/msg/LaserScan"
+    ]
+  }
+}

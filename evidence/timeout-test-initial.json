@@ -1,0 +1,34 @@
+{
+  "initial_pose": [
+    -2.0,
+    -0.5,
+    0.0
+  ],
+  "goals": [
+    {
+      "goal": [
+        1.5,
+        1.5,
+        3.14159
+      ],
+      "result": "TaskResult.CANCELED",
+      "succeeded": false,
+      "timed_out": true,
+      "wall_seconds": 0.126,
+      "cancellation": {
+        "requested": true,
+        "response_received": true,
+        "terminal_result_received": true
+      },
+      "distance_m": 0.0,
+      "nearest_scan_return_m": 0.6254614591598511,
+      "final_amcl_xy": [
+        -2.0,
+        -0.5
+      ],
+      "estimated_goal_error_m": 4.031128874149275
+    }
+  ],
+  "all_succeeded": false,
+  "note": "Distance is odometry-derived. Scan minimum is sensor range, not footprint clearance or a collision guarantee."
+}

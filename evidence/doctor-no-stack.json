@@ -1,0 +1,84 @@
+{
+  "passed": false,
+  "interrupted": false,
+  "observation_wall_seconds": 2.0,
+  "checks": {
+    "clock_stream": {
+      "passed": false,
+      "topic": "/clock",
+      "samples": 0,
+      "advancing": false,
+      "age_wall_seconds": null,
+      "age_sim_seconds": null,
+      "backward_jumps": 0
+    },
+    "scan_stream": {
+      "passed": false,
+      "topic": "/scan",
+      "samples": 0,
+      "advancing": false,
+      "age_wall_seconds": null,
+      "age_sim_seconds": null,
+      "backward_jumps": 0
+    },
+    "odom_stream": {
+      "passed": false,
+      "topic": "/odom",
+      "samples": 0,
+      "advancing": false,
+      "age_wall_seconds": null,
+      "age_sim_seconds": null,
+      "backward_jumps": 0
+    },
+    "scan_values": {
+      "passed": false,
+      "reason": "No laser scan received"
+    },
+    "odom_values": {
+      "passed": false,
+      "reason": "No odometry received"
+    },
+    "tf:map<-odom": {
+      "passed": false,
+      "reason": "\"map\" passed to lookupTransform argument target_frame does not exist. "
+    },
+    "tf:odom<-base_footprint": {
+      "passed": false,
+      "reason": "\"odom\" passed to lookupTransform argument target_frame does not exist. "
+    },
+    "tf:base_footprint<-base_link": {
+      "passed": false,
+      "reason": "\"base_footprint\" passed to lookupTransform argument target_frame does not exist. "
+    },
+    "lifecycle:amcl": {
+      "passed": false,
+      "state": null,
+      "response_age_wall_seconds": null
+    },
+    "lifecycle:controller_server": {
+      "passed": false,
+      "state": null,
+      "response_age_wall_seconds": null
+    },
+    "lifecycle:planner_server": {
+      "passed": false,
+      "state": null,
+      "response_age_wall_seconds": null
+    },
+    "lifecycle:bt_navigator": {
+      "passed": false,
+      "state": null,
+      "response_age_wall_seconds": null
+    },
+    "lifecycle:behavior_server": {
+      "passed": false,
+      "state": null,
+      "response_age_wall_seconds": null
+    },
+    "navigate_to_pose_action": {
+      "passed": false,
+      "action": "/navigate_to_pose"
+    }
+  },
+  "scope": "Read-only snapshot after localization; does not prove navigation success or collision freedom."
+}
