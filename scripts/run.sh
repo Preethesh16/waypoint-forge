@@ -8,7 +8,7 @@ export ROS_DOMAIN_ID=${ROS_DOMAIN_ID:-73}
 export GZ_PARTITION=${GZ_PARTITION:-antropi_${ROS_DOMAIN_ID}_$$}
 # The upstream Gazebo launcher uses shell/ruby children. Signal their entire
 # process group so they cannot survive a restart and publish a second clock.
-setsid ros2 launch "$ROOT/launch/demo.launch.py" &
+setsid ros2 launch "$ROOT/launch/demo.launch.py" "$@" &
 launch_pid=$!
 cleanup() {
     trap - EXIT INT TERM

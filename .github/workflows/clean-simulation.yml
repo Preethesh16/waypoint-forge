@@ -1,0 +1,88 @@
+name: Clean build and real Nav2 simulation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: clean-simulation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  clean-simulation:
+    # Standard GitHub-hosted Linux runners are free for this public repository.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+
+      - name: Build the actual Dockerfile without cached layers
+        timeout-minutes: 35
+        run: |
+          mkdir -p ci-artifacts
+          docker build --pull --no-cache --progress=plain -t waypoint-forge:ci . 2>&1 | tee ci-artifacts/build.log
+          docker image inspect waypoint-forge:ci > ci-artifacts/image-inspect.json
+
+      - name: Start isolated software-rendered simulation environment
+        run: |
+          docker run -d --init --name waypoint-ci --shm-size=512m \
+            -e LIBGL_ALWAYS_SOFTWARE=1 -e QT_X11_NO_MITSHM=1 \
+            -e GZ_PARTITION=waypoint_ci_${{ github.run_id }}_${{ github.run_attempt }} \
+            waypoint-forge:ci bash -c 'Xvfb :99 -screen 0 1600x900x24 -nolisten tcp >/tmp/xvfb.log 2>&1 & exec sleep infinity'
+          docker exec waypoint-ci bash -c '
+            for attempt in $(seq 1 50); do
+              if xdpyinfo -display :99 >/dev/null 2>&1; then exit 0; fi
+              sleep 0.1
+            done
+            cat /tmp/xvfb.log >&2
+            exit 1'
+          docker exec waypoint-ci bash -c "dpkg-query -W -f='\${Package}\t\${Version}\n'" > ci-artifacts/installed-packages.tsv
+
+      - name: Run real CLI and absent-stack interruption tests
+        timeout-minutes: 3
+        run: |
+          docker exec waypoint-ci bash -c 'source /opt/ros/jazzy/setup.bash; python3 -m unittest discover -s tests -v' 2>&1 | tee ci-artifacts/cli-tests.log
+
+      - name: Launch real Gazebo and Nav2 without GUI clients
+        run: |
+          docker exec -d waypoint-ci bash -c 'exec bash scripts/run.sh gui:=false >/tmp/simulation.log 2>&1'
+
+      - name: Execute both autonomous navigation goals
+        timeout-minutes: 8
+        run: |
+          docker exec waypoint-ci bash scripts/mission.sh --timeout 180 --output evidence/ci-mission.json 2>&1 | tee ci-artifacts/mission.log
+          docker exec waypoint-ci python3 -c 'import json; r=json.load(open("evidence/ci-mission.json")); assert r["all_succeeded"] and len(r["goals"]) == 2; assert all(g["succeeded"] and not g["timed_out"] for g in r["goals"]); print("Both real NavigateToPose actions succeeded")'
+
+      - name: Verify live sensors, transforms and Nav2 readiness
+        timeout-minutes: 1
+        run: |
+          docker exec waypoint-ci bash -c 'source /opt/ros/jazzy/setup.bash; python3 scripts/doctor.py --duration 10 --output evidence/ci-doctor.json' 2>&1 | tee ci-artifacts/doctor.log
+
+      - name: Collect evidence even after a failed run
+        if: always()
+        run: |
+          mkdir -p ci-artifacts
+          if docker container inspect waypoint-ci >/dev/null 2>&1; then
+            docker cp waypoint-ci:/demo/evidence/. ci-artifacts/ || true
+            docker cp waypoint-ci:/tmp/simulation.log ci-artifacts/simulation.log || true
+            docker cp waypoint-ci:/tmp/xvfb.log ci-artifacts/xvfb.log || true
+            docker logs waypoint-ci > ci-artifacts/container.log 2>&1 || true
+            docker stop --time 10 waypoint-ci >/dev/null || true
+            docker rm waypoint-ci >/dev/null || true
+          fi
+
+      - name: Upload exact-commit build and simulation evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: clean-simulation-${{ github.sha }}-${{ github.run_attempt }}
+          path: ci-artifacts/
+          if-no-files-found: error
+          retention-days: 7
