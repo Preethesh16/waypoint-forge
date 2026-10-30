@@ -1,4 +1,4 @@
-# TurtleBot3 inspection mission — ROS 2 + Nav2
+# Waypoint Forge — TurtleBot3 inspection mission
 
 A repeatable two-station navigation mission through the TurtleBot3 obstacle
 world, with Gazebo simulation, RViz visualization and measured action outcomes.
@@ -10,9 +10,10 @@ total. The independent live diagnostics passed all 15 checks. See
 
 ![Gazebo and RViz demonstration](evidence/demo-frame.png)
 
-The 75-second screen recording is delivered alongside this repository as
-`evidence/demo.mp4` (release asset when published). It shows actual Gazebo/RViz
-execution at normal speed.
+[Watch or download the 75-second demo](https://github.com/Preethesh16/waypoint-forge/releases/download/v1.0.0/demo.mp4)
+from the [v1.0.0 release](https://github.com/Preethesh16/waypoint-forge/releases/tag/v1.0.0).
+It shows actual Gazebo/RViz execution at normal speed. The release also contains
+the complete submission ZIP, including the video.
 
 ## Run on Ubuntu 24.04 / ROS 2 Jazzy
 
