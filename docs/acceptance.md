@@ -12,9 +12,9 @@ isolation. No physical hardware has been operated.
 | TurtleBot3 in Gazebo | Official Burger model and obstacle world | Robot spawns; physics, clock and sensors advance | Passed: live diagnostics and actual recording |
 | Autonomous navigation | AMCL, Nav2, configured costmaps/planner/controller | Real NavigateToPose actions succeed | Passed: v1.0 recorded mission and v1.1 13/13 benchmark goals |
 | Obstacle avoidance | Laser-driven costmaps, NavFn and DWB | Robot follows paths around obstacles in Gazebo/RViz | Passed in existing recording; no formal collision-free claim |
-| 1–2 minute recording | Dedicated simulation desktop | 60–120 s recording visibly shows both applications | Existing verified v1.0:75 s; enhanced v1.1 recording verification tracked below |
-| Public GitHub repository | Source, configuration, documentation and attribution | Public URL works | Verified public: https://github.com/Preethesh16/waypoint-forge; v1.1 release publication tracked separately |
-| Brief setup instructions | Exact native Jazzy/Docker/runtime commands | Exercise documented runtime | Passed in Ubuntu container; separate fresh Dockerfile image build unverified |
+| 1–2 minute recording | Dedicated simulation desktop | 60–120 s recording visibly shows both applications | Passed: enhanced v1.1 video 90 s, 1600×900, 20 fps; full decode and stills inspected |
+| Public GitHub repository | Source, configuration, documentation and attribution | Public URL works | Verified public: https://github.com/Preethesh16/waypoint-forge; release assets are linked from the README |
+| Brief setup instructions | Exact native Jazzy/Docker/runtime commands | Exercise documented runtime | Passed: final uncached Docker build, 22 tests, two real goals and 15 diagnostics at ecaf83a |
 | Submission form answers | Confirmed experience and factual account of debugging | Correct links and truthful answers | Prior ROS 2 experience:Yes; submission receipt tracked separately |
 | Permitted assistance | Attribution and disclosure | AI use disclosed; upstream work credited | Included in THIRD_PARTY.md |
 
@@ -27,12 +27,15 @@ isolation. No physical hardware has been operated.
 - [x] Record **6/6 trial successes and 13/13 goal successes**, with unchanged core
   source hashes and raw per-trial evidence.
 - [x] Verify fresh feedback/AMCL pose selection and populated bounded trajectories.
-- [x] Run **21/21 independent regression tests** successfully (11.687 s).
+- [x] Run **22/22 independent regression tests** successfully (8.085 s).
 - [x] Check plot calculations, units, map orientation, and estimate/sample-size caveats.
 - [x] Reject mixed-source benchmark reports when plotting a fixed configuration.
-- [ ] Verify enhanced video duration, complete decode and selected actual frames.
-- [ ] Verify optional unmapped-crate experiment from actual map/costmap evidence.
-- [ ] Complete v1.1 release/link checks after publication.
+- [x] Verify enhanced video duration, complete decode and selected actual frames.
+- [x] Verify optional unmapped-crate experiment: 144 static-map cells free, 12
+  live-costmap cells lethal, all freshness checks passing, two mission goals successful.
+
+The final executable-source clean build passed [Actions run 41104171580](https://github.com/Preethesh16/waypoint-forge/actions/runs/41104171580).
+See [reproducibility](reproducibility.md) for the tested commit and archived artifacts.
 
 Detailed results: [independent verification](verification.md),
 [benchmark protocol/results](benchmark.md), and

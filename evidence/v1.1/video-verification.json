@@ -1,0 +1,19 @@
+{
+  "filename": "demo.mp4",
+  "sha256": "89bd52b392bd56a1e8b3c405c97d3d700f92cd3ddbe19870c99d92760da15ce1",
+  "bytes": 8512503,
+  "duration_seconds": 90,
+  "width": 1600,
+  "height": 900,
+  "frames_per_second": 20,
+  "codec": "h264",
+  "complete_decode": "passed; ffmpeg -v error -i demo.mp4 -f null -",
+  "inspected_frames_seconds": [
+    20,
+    35,
+    65
+  ],
+  "mission_report": "mission-demo.json",
+  "all_goals_succeeded": true,
+  "note": "Continuous X11 capture at normal speed, actual status-file overlay. Crate exists before navigation starts. No claim of ground-truth clearance."
+}

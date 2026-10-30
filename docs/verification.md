@@ -87,10 +87,15 @@ ffmpeg -v error -i evidence/demo.mp4 -f null -
 
 ## Limits and remaining caveats
 
-- The Dockerfile itself was **not clean-built as a fresh image**. Actual packages,
-  launch scripts, ROS tests and simulation were exercised in an isolated Ubuntu
-  container; low host disk space required relocating runtime libraries. Native
-  Ubuntu installation on a separate machine remains untested.
+- **Historical v1.0 limitation, subsequently addressed for the pinned environment:**
+  the original local work did not build a fresh Docker image and relocated
+  runtime libraries under disk pressure. An actual uncached build and successful
+  real simulation later passed in [CI run 41102204300](https://github.com/Preethesh16/waypoint-forge/actions/runs/41102204300)
+  at commit `c05b6d5`; durable artifacts are in `evidence/v1.1/ci-initial/`.
+  That initial run predates final telemetry improvements. Consult
+  [reproducibility](reproducibility.md) for exact final-source CI; do not treat
+  the initial run as proof for a newer commit. Native Ubuntu installation on
+  a separate machine remains untested.
 - Software-rendered RViz emitted an initial GLSL sampler-link warning, although
   map/costmap rendering is visibly present in the recorded frames. Initial TF
   synchronization warnings also occurred. Logs are not claimed error-free.
@@ -122,12 +127,34 @@ choose a fresher navigation-feedback pose. Neither is ground truth.
 See [benchmark protocol and full measurements](benchmark.md) and
 [`evidence/v1.1/benchmark/summary.json`](../evidence/v1.1/benchmark/summary.json).
 Five observed repeat successes are not a demonstrated reliability probability;
-all trials share one host, map and configuration. The enhanced video and optional crate experiment are reported separately when complete.
+all trials share one host, map and configuration. Enhanced video and crate results are recorded below.
 
-The v1.1 independent regression pass completed **21/21 tests in 11.687 s**.
+The v1.1 independent regression pass completed **22/22 tests in 8.085 s**.
 It includes real isolated-ROS interruption/status tests plus input, evidence
 freshness, benchmark aggregation and occupancy-grid extraction checks. See
 [`evidence/v1.1/regression-tests.txt`](../evidence/v1.1/regression-tests.txt).
 The benchmark plot was independently reviewed against the raw values and map
 geometry. Its source now refuses reports without confirmed unchanged hashes;
 the displayed artifact has unchanged hashes and needs no regeneration.
+
+## v1.1 enhanced local demo and unmapped obstacle
+
+Independent FFprobe inspection confirms **90.000 seconds**, H.264, 1600×900,
+20 fps and 8,512,503 bytes. Full decoding returned exit 0. Both supplied stills
+were independently inspected: Gazebo visibly contains the orange crate; RViz
+shows its sensed costmap region and the planned path, with readable live goal
+feedback and a terminal MISSION SUCCEEDED status.
+
+`evidence/v1.1/initialization.json` records initialization without goals. The
+subsequent `mission-demo.json` confirms no initial-pose reset and both goals
+succeeded (29.382 s and 22.357 s; summed 51.739 s, total client 58.010 s including
+readiness). `demo-doctor.json` passed all 15 health checks. The observer report
+shows 144/144 static-map probe cells free and 12 lethal live-costmap cells, with
+all five observer conditions true. This establishes observed
+unmapped-obstacle marking alongside successful navigation; it does not establish
+object identity from grids alone, footprint clearance or contact-free motion.
+
+The benchmark hashes identify the code used during those six runs. A subsequent
+telemetry timestamp-ordering-only fix avoids tiny negative receipt ages; the
+final 22-test suite passed after it. Final-source clean CI is tracked separately,
+rather than retroactively relabeling older evidence.

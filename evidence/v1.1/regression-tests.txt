@@ -11,6 +11,7 @@ test_future_and_old_wall_samples_are_stale (test_mission_evidence.PoseEvidence.t
 test_invalid_or_different_frame_pose_is_rejected (test_mission_evidence.PoseEvidence.test_invalid_or_different_frame_pose_is_rejected) ... ok
 test_overlay_never_presents_stale_remaining_distance (test_mission_evidence.PoseEvidence.test_overlay_never_presents_stale_remaining_distance) ... ok
 test_receipt_alone_does_not_make_old_sim_pose_fresh (test_mission_evidence.PoseEvidence.test_receipt_alone_does_not_make_old_sim_pose_fresh) ... ok
+test_snapshot_before_receipt_cannot_claim_fresh_pose (test_mission_evidence.PoseEvidence.test_snapshot_before_receipt_cannot_claim_fresh_pose) ... ok
 test_blank_partition_rejected_before_observer_initialization (test_unmapped_obstacle.HelperContracts.test_blank_partition_rejected_before_observer_initialization) ... ok
 test_missing_partition_rejected_before_spawn (test_unmapped_obstacle.HelperContracts.test_missing_partition_rejected_before_spawn) ... ok
 test_sdf_is_fixed_static_crate_with_matching_collision_and_visual (test_unmapped_obstacle.HelperContracts.test_sdf_is_fixed_static_crate_with_matching_collision_and_visual) ... ok
@@ -21,6 +22,6 @@ test_rotated_origin_still_selects_same_world_region (test_unmapped_obstacle.Regi
 test_unknown_and_inflated_cells_are_not_lethal_or_free (test_unmapped_obstacle.RegionExtraction.test_unknown_and_inflated_cells_are_not_lethal_or_free) ... ok
 
 ----------------------------------------------------------------------
-Ran 21 tests in 11.687s
+Ran 22 tests in 8.085s
 
 OK

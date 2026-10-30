@@ -1,0 +1,27 @@
+test_failed_attempt_is_in_success_denominator_not_timing_sample (test_benchmark.BenchmarkEvidence.test_failed_attempt_is_in_success_denominator_not_timing_sample) ... ok
+test_incomplete_or_failed_runs_cannot_count_as_success (test_benchmark.BenchmarkEvidence.test_incomplete_or_failed_runs_cannot_count_as_success) ... ok
+test_no_numeric_measurements_are_not_reported_as_zero (test_benchmark.BenchmarkEvidence.test_no_numeric_measurements_are_not_reported_as_zero) ... ok
+test_help_does_not_need_simulator (test_cli.MissionCLI.test_help_does_not_need_simulator) ... ok
+test_invalid_goals_fail_before_ros_startup (test_cli.MissionCLI.test_invalid_goals_fail_before_ros_startup) ... ok
+test_invalid_timeout_fail_before_ros_startup (test_cli.MissionCLI.test_invalid_timeout_fail_before_ros_startup) ... ok
+test_interrupt_while_waiting_for_absent_amcl (test_interrupt.MissingStackInterruption.test_interrupt_while_waiting_for_absent_amcl) ... ok
+test_status_created_before_readiness_and_interrupt_preserves_evidence (test_mission_evidence.LiveStatus.test_status_created_before_readiness_and_interrupt_preserves_evidence) ... ok
+test_fresh_feedback_supersedes_old_amcl (test_mission_evidence.PoseEvidence.test_fresh_feedback_supersedes_old_amcl) ... ok
+test_future_and_old_wall_samples_are_stale (test_mission_evidence.PoseEvidence.test_future_and_old_wall_samples_are_stale) ... ok
+test_invalid_or_different_frame_pose_is_rejected (test_mission_evidence.PoseEvidence.test_invalid_or_different_frame_pose_is_rejected) ... ok
+test_overlay_never_presents_stale_remaining_distance (test_mission_evidence.PoseEvidence.test_overlay_never_presents_stale_remaining_distance) ... ok
+test_receipt_alone_does_not_make_old_sim_pose_fresh (test_mission_evidence.PoseEvidence.test_receipt_alone_does_not_make_old_sim_pose_fresh) ... ok
+test_snapshot_before_receipt_cannot_claim_fresh_pose (test_mission_evidence.PoseEvidence.test_snapshot_before_receipt_cannot_claim_fresh_pose) ... ok
+test_blank_partition_rejected_before_observer_initialization (test_unmapped_obstacle.HelperContracts.test_blank_partition_rejected_before_observer_initialization) ... ok
+test_missing_partition_rejected_before_spawn (test_unmapped_obstacle.HelperContracts.test_missing_partition_rejected_before_spawn) ... ok
+test_sdf_is_fixed_static_crate_with_matching_collision_and_visual (test_unmapped_obstacle.HelperContracts.test_sdf_is_fixed_static_crate_with_matching_collision_and_visual) ... ok
+test_clipped_region_is_not_treated_as_complete (test_unmapped_obstacle.RegionExtraction.test_clipped_region_is_not_treated_as_complete) ... ok
+test_complete_free_region_preserves_cells_and_coordinates (test_unmapped_obstacle.RegionExtraction.test_complete_free_region_preserves_cells_and_coordinates) ... ok
+test_invalid_grid_contracts_are_rejected (test_unmapped_obstacle.RegionExtraction.test_invalid_grid_contracts_are_rejected) ... ok
+test_rotated_origin_still_selects_same_world_region (test_unmapped_obstacle.RegionExtraction.test_rotated_origin_still_selects_same_world_region) ... ok
+test_unknown_and_inflated_cells_are_not_lethal_or_free (test_unmapped_obstacle.RegionExtraction.test_unknown_and_inflated_cells_are_not_lethal_or_free) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 6.832s
+
+OK

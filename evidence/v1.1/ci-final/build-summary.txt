@@ -1,0 +1,18 @@
+Selected build events from original build.log; full log remains in the linked Actions artifact.
+#1 DONE 0.0s
+#2 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:fe81560990fae86dc4743202b2cb4d3df98d0bcf949173cecef15ce1127ef852
+#3 DONE 0.0s
+#2 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:fe81560990fae86dc4743202b2cb4d3df98d0bcf949173cecef15ce1127ef852
+#2 DONE 0.9s
+#4 DONE 0.0s
+#5 DONE 0.0s
+#6 [1/5] FROM docker.io/library/ubuntu:24.04@sha256:fe81560990fae86dc4743202b2cb4d3df98d0bcf949173cecef15ce1127ef852
+#6 DONE 1.2s
+#7 DONE 155.0s
+#8 DONE 0.0s
+#9 DONE 0.0s
+#10 DONE 0.1s
+#11 exporting to image
+#11 writing image sha256:09d0d5d7fad24883d9396beb4dfe36ab8442702b9ad22bcd11c9e96a639a1c92 done
+#11 naming to docker.io/library/waypoint-forge:ci done
+#11 DONE 18.3s

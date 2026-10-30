@@ -1,0 +1,29 @@
+{
+  "tested_code_commit": "ecaf83ab6503b92c97130196ac2ec81869154f75",
+  "sha256": {
+    ".dockerignore": "11948e93c2f7b24bbac834a94737bd6047d14cf286de172d1bb1cf89c8d296e3",
+    ".github/workflows/clean-simulation.yml": "676e812e90d33bfba0be7699fcb09f590714c44b7730ddbf6eb8723d4dd02e86",
+    "Dockerfile": "3147d82fecc23cc35352e8ebc5f30f3eed9e45408d3200e86d49de17532878e1",
+    "config/gazebo.config": "ca2cb8fb2e246545f235247d7d86a7fde1eb45d189019d5b9372bd5a7cfadd8e",
+    "config/nav2.yaml": "442170674ce58fa15a84f63d7c1b23b1fb8504832b076305a5e20c313632e42b",
+    "config/navigation.rviz": "57cbc82ac0d3625dc8b086ac8836649ef1035439cd3fdaa01f4027a836f8b5dc",
+    "config/unmapped_crate.sdf": "0a6d4db29c6e8b4cec17b469b9c1e4049901906d61e54f8adcab4fe11c8ceda0",
+    "launch/demo.launch.py": "363b0cf716d2d12e4aee69e3336c8892564688fd3473cf19166a05cc5adc008d",
+    "requirements-report.txt": "184bc2913078e79805ae8f8e6e4b6b3b4404f1bce821beadf9e7a4baa4952e3a",
+    "scripts/benchmark.py": "635b916987f1797c29b8394f8c23745653bbcd0a33366901fe9b4ef20537aba8",
+    "scripts/desktop.sh": "7cd1d23ea894cb3d6a781c772daf8d6f6be1829e43669a0aae14d544b690f4d0",
+    "scripts/doctor.py": "83cf78433c0dddcc518ccbf18930851c4686aefb7a811c3fe175ee0160f0ee54",
+    "scripts/mission.py": "dc98f6c25e52193bf578d23311e93bee49a2a3115b29a0f2bc9eab4e015df7cf",
+    "scripts/mission.sh": "216387945477c74f59702edf6ce30411904c27be7fd8b1e6c9ea32fde07cf64f",
+    "scripts/plot_results.py": "b4e36c66467b479a0b21fd46b99f95e2c224026f7f6fbd5442c49bc00604abeb",
+    "scripts/record.sh": "d60fd3e97a13f686eae02a574760649c44a7caed627986d183d7f582f5871f7c",
+    "scripts/run.sh": "d8e18b5db4f68b135f7f1d51f630cca800777079d0bf4d8bdb9f0f1ac043b131",
+    "scripts/unmapped_obstacle.py": "63e7b0ae9aaceaed3f2d6efdc545d43859952c31dcae132ec7f7ab19bb59b256",
+    "tests/test_benchmark.py": "0e3c7973a763d9ce4792b33cc0239a5bb3570b6eb7a0ad5f4b4a5735e714a271",
+    "tests/test_cli.py": "211ca0e8789db14c9a12d732b7ae4b9b5a83d92b916a34411347a6f8d42abc33",
+    "tests/test_interrupt.py": "defa3caa4b52cae237b5e95cc85996f281b612856a94a7ddc2bc013c0dbc04ae",
+    "tests/test_mission_evidence.py": "3e5b258b16b70eca0ecadbeed0885097a7074e583de0b6880d8c8a34487d25f3",
+    "tests/test_unmapped_obstacle.py": "2b2cd07f6feb979bb4bc629143e2ecfd6f42f30cf03ec41c79cf040469debddf"
+  },
+  "note": "Final release documentation/evidence may be committed later. These executable, configuration, test and build inputs must remain identical."
+}

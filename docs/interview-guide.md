@@ -109,12 +109,12 @@ launcher-only shutdown and contaminate a new simulation. The wrapper now owns an
 isolated process group, uses bounded cleanup and sets a unique Gazebo transport
 partition. Clock freshness and publisher count are checked in every benchmark.
 
-**What would the optional crate experiment prove?** If the actual observer passes,
-static-map cells are free while the same live-costmap region contains lethal
-obstacle cells, with fresh advancing data. That is evidence of unmapped obstacle
-marking. Visible crate placement and successful navigation are complementary
-checks; the grid comparison alone does not prove object identity or collision
-freedom. Refer to the experiment's actual report before claiming it passed.
+**What did the crate experiment establish?** The actual observer found all 144
+static-map cells in the probe region free, while the live costmap contained 12
+lethal cells there, with fresh advancing data. The crate was visible in Gazebo
+and both mission goals succeeded. These observations support unmapped-obstacle
+marking and navigation around it; the grid comparison alone does not prove
+object identity or collision freedom. The crate was static, not a moving obstacle.
 
 ## Measured evidence to remember
 
@@ -125,20 +125,27 @@ freedom. Refer to the experiment's actual report before claiming it passed.
   **0.1420 m**, within the configured 0.15 m tolerance.
 - Every trial passed post-mission health checks and owned-process cleanup.
   Feedback reported zero recoveries in this suite.
-- Independent regression suite: **21/21** passed. Test counts are not a substitute
+- Independent regression suite: **22/22** passed. Test counts are not a substitute
   for the actual navigation/recording evidence.
 
 See [benchmark results](benchmark.md) and [verification](verification.md) for
 exact files and caveats. The small suite does not cover moving obstacles, sensor
 failure recovery, varied environments, real hardware or formal contact checks.
 
+The enhanced crate recording is 90 seconds. Its two goals took 29.382 s and
+22.357 s (**51.739 s** summed action time); total client time including readiness
+was **58.010 s**. Keep these timing definitions separate.
+
 ## Practical limitations and next steps
 
-A separate fresh Dockerfile image build remains unverified: real packages and
-runtime commands were exercised in an Ubuntu container, while host disk pressure
-required runtime-library relocation. RViz software rendering produced an initial
+The original local build caveat was subsequently addressed for the pinned
+environment by an actual uncached Docker CI build and successful simulation at
+commit `c05b6d5`. Its artifacts confirm two successful goals and 15 live diagnostic
+checks. That initial run predates the latest telemetry code; use
+[reproducibility](reproducibility.md) for the final-source CI status. The original
+local container still required runtime-library relocation under disk pressure. RViz software rendering produced an initial
 GLSL warning despite visibly rendered maps/costmaps. Do not call the logs
-error-free or claim a clean build that was not performed.
+error-free or imply that an older CI run tested a newer source revision.
 
 Useful next tests would add independent Gazebo ground-truth/contact measurements,
 more layouts and random seeds, controlled sensor outages, and comparisons of

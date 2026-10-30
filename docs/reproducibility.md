@@ -15,10 +15,31 @@ two successful autonomous goals (31.456 s and 19.585 s wall time), and all 15 li
 diagnostic checks passing. Selected durable evidence and original artifact-file
 SHA256 hashes are archived in `evidence/v1.1/ci-initial/`.
 
-This initial CI run predates the final v1.1 mission evidence, benchmark and dynamic
+This initial CI run predates the final v1.1 mission evidence, benchmark and unmapped
 obstacle additions. It validates the pinned environment and original mission;
-**exact-final-source CI remains pending** until a later run verifies that commit.
+the final executable source was subsequently verified by the run below.
 The artifact’s full build/runtime logs remain linked from the run while retained.
+
+## Verified final executable-source run
+
+[Actions run 41104171580](https://github.com/Preethesh16/waypoint-forge/actions/runs/41104171580)
+completed successfully for commit `ecaf83ab6503b92c97130196ac2ec81869154f75`.
+The downloaded artifact was independently inspected, not inferred from a green
+badge alone:
+
+- The final Dockerfile built without cached layers and produced image
+  `sha256:09d0d5d7fad24883d9396beb4dfe36ab8442702b9ad22bcd11c9e96a639a1c92`.
+- **22 regression tests passed** in 6.832 seconds against the installed ROS APIs.
+- Both real Nav2 goals succeeded, taking 34.658 s and 20.357 s wall time.
+- Both final pose estimates were fresh; estimated errors were 0.0511 m and
+  0.0371 m, with zero reported recoveries. These remain localization estimates.
+- **All 15 live runtime diagnostics passed.**
+
+Durable reports, package/image records, selected logs and original artifact-file
+SHA256 hashes are in `evidence/v1.1/ci-final/`. The later release closeout may add
+only documentation and evidence; it is not the same Git commit tested above.
+`evidence/v1.1/runtime-source-sha256.json` records the executable/build/test inputs
+so their identity can be checked without mislabeling the CI-tested commit.
 
 ## What is pinned
 

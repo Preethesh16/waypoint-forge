@@ -6,7 +6,9 @@ Prepared for the Antropi Robotics Software Intern assignment.
 
 **Measured:** six fresh simulation trials passed all 13 requested goals.
 The five repeated standard missions had a median summed goal time of **50.224 s**.
-Every trial passed the live diagnostics and process-cleanup checks. These are
+Every trial passed the live diagnostics and process-cleanup checks.
+The final clean Docker build passed **22 regression tests**, both real navigation
+goals and **15 runtime diagnostics** in [GitHub Actions](https://github.com/Preethesh16/waypoint-forge/actions/runs/41104171580). These are
 observed results on one host, not a statistical reliability guarantee.
 
 ![Gazebo and RViz with live mission feedback](evidence/v1.1/demo-frame.png)

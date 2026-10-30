@@ -1,0 +1,45 @@
+{
+  "run_id": 41104171580,
+  "commit": "ecaf83ab6503b92c97130196ac2ec81869154f75",
+  "url": "https://github.com/Preethesh16/waypoint-forge/actions/runs/41104171580",
+  "artifact_id": 13000567163,
+  "artifact_name": "clean-simulation-ecaf83ab6503b92c97130196ac2ec81869154f75-1",
+  "conclusion": "success",
+  "scope": "Clean Docker build and real simulation of final executable v1.1 source. Later documentation/evidence-only commit is not this tested Git commit; compare runtime-source-sha256.json.",
+  "original_artifact_files_sha256": {
+    "build.log": "26524ce595c8fd392e7c2daf19251a9100ed1a6a9c70baded8b5631f59211b55",
+    "ci-doctor.json": "ba3a95166ba2135bf0aca3c3e834645c2e79f61e1fd298ab0d49c48da0b19918",
+    "ci-mission.json": "0ea3d0bb2ea2030ecf45d949344f736c0cf7d226c4bfbbeae0cde4a13b4452cc",
+    "cli-tests.log": "662e369f5728f51599a227137f2d5d40453209690cbde8a28e1a79c57c2b18db",
+    "container.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "doctor.log": "ba3a95166ba2135bf0aca3c3e834645c2e79f61e1fd298ab0d49c48da0b19918",
+    "image-inspect.json": "8e4a6470f7466159f80600439bd0744f831667cb426b3650abd61a71d5fb097d",
+    "installed-packages.tsv": "4fa0df68a2e1e171c73073740b988732eae8a5626b56c6dd867827aab9ff9375",
+    "mission.log": "d339fc144f7509f082a492e00e151684926fe04ae944f49d96c66ffcce4b937b",
+    "simulation.log": "f330058995da6d930b0191b0d433d9a77810b790504acce50ecb1924454ecca9",
+    "xvfb.log": "b987a262609a3720f450ab6815ed90b2069dd47b7b012959ca19c325aebf5d55"
+  },
+  "results": {
+    "cli_tests": 22,
+    "cli_test_wall_seconds": 6.832,
+    "goals_succeeded": 2,
+    "goal_wall_seconds": [
+      34.658,
+      20.357
+    ],
+    "goal_sim_seconds": [
+      36.043,
+      20.02
+    ],
+    "fresh_estimated_goal_error_m": [
+      0.05114024314053024,
+      0.03706283818064248
+    ],
+    "recoveries": [
+      0,
+      0
+    ],
+    "doctor_checks_passed": 15,
+    "docker_image_id": "sha256:09d0d5d7fad24883d9396beb4dfe36ab8442702b9ad22bcd11c9e96a639a1c92"
+  }
+}

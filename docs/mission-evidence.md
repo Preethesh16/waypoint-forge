@@ -79,9 +79,9 @@ source /opt/ros/jazzy/setup.bash
 python3 -m unittest discover -s tests -p 'test_mission_evidence.py' -v
 ```
 
-Six checks passed against the real installed ROS Python APIs: fresh feedback vs.
+Seven checks passed against the real installed ROS Python APIs: fresh feedback vs.
 stale AMCL selection, old simulation stamps despite fresh receipt, future/stale
-samples, wrong-frame/nonfinite poses, removal of stale remaining distance from
+samples, snapshot-versus-receipt ordering, wrong-frame/nonfinite poses, removal of stale remaining distance from
 the overlay, and an actual isolated-domain process that creates live files while
 waiting for missing AMCL and preserves interruption evidence without a traceback.
 The last check uses ROS domain 96 and sends no navigation action.
@@ -89,3 +89,9 @@ The last check uses ROS domain 96 and sends no navigation action.
 Full simulation behavior and positive recording results must be verified by the
 integration run after these changes; the unit/isolated checks do not establish
 navigation success.
+
+A final telemetry-only correction takes the status snapshot wall timestamp after
+collecting newly received action feedback. This prevents a callback-ordering
+artifact that could report a tiny negative feedback age. Earlier recorded runs
+and benchmark source hashes are retained unchanged; navigation commands and
+parameters were not altered by this correction.
