@@ -11,9 +11,9 @@ runtime isolation is provided by Docker. No physical hardware is involved.
 | Autonomous goal navigation | Nav2 + AMCL + checked-in parameters | Both NavigateToPose actions succeed | Passed: evidence/mission.json, both goals succeeded |
 | Obstacle avoidance | Laser-driven costmaps, NavFn, DWB | Observe trajectory around cylinder field in Gazebo/RViz | Passed: actual recorded trajectory around obstacles |
 | 1–2 minute screen recording | Dedicated simulation desktop | 60–120 second video visibly shows Gazebo and RViz | Passed: 75 s, 1600×900, 20 fps |
-| Relevant public GitHub repository | Launch, mission, configuration, README, attribution | Clean repository; public URL works | Pending final user publication approval |
+| Relevant public GitHub repository | Launch, mission, configuration, README, attribution | Clean repository; public URL works | Passed: https://github.com/Preethesh16/waypoint-forge is public |
 | Brief setup instructions | Native Jazzy and Docker instructions | Run documented commands against actual environment | Runtime commands passed; clean Dockerfile build not performed |
-| Submission answers | User-confirmed ROS 2 experience and factual challenge account | Correct links and truthful answers | Prior experience: Yes; factual draft ready, public links await approval |
+| Submission answers | User-confirmed ROS 2 experience and factual challenge account | Correct links and truthful answers | Prior experience: Yes; factual answers ready; submission receipt tracked separately |
 | AI assistance allowed | Attribution and disclosure | Explicit disclosure, no fabricated outcomes | Included in THIRD_PARTY.md |
 
 ## Supporting quality checks

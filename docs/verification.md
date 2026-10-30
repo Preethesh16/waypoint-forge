@@ -1,6 +1,6 @@
 # Independent verification
 
-**Local acceptance passed. Public publication/submission await user approval.**
+**Local acceptance passed. Publication and submission approved by the user. Repository verified public.**
 The independent tester inspected the requirements and source, exercised the real
 ROS implementation, queried the live graph and inspected recorded output.
 
@@ -20,7 +20,8 @@ ROS implementation, queried the live graph and inspected recorded output.
 | Goal timeout | Clean-stack 0.1 s timeout canceled after 0.127 s, exited 1, no false success | `evidence/timeout-test.json` |
 | Shutdown / restart | All live owned processes removed; restart clock began at 0.002 s with one publisher | `evidence/restart-clock.json` |
 | Required video | 75.000 s, H.264, 1600×900, 20 fps; entire file decodes without error | `evidence/demo.mp4` |
-| Public repository and submission | Pending explicit publication approval | Not yet claimed complete |
+| Public repository | Unauthenticated HTTP access and GitHub visibility check | Passed: https://github.com/Preethesh16/waypoint-forge |
+| Submission | Approved form answers; completion receipt kept outside source repository | Tracked separately |
 
 The final bounded unittest pass ran four grouped tests in **7.726 seconds**, all
 passing. These invoke actual subprocesses and the installed ROS client; the

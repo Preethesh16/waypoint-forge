@@ -113,3 +113,9 @@ missing core requirement.
 
 This review did not operate physical hardware. It does not certify collision
 freedom, deterministic replay or behavior in untested worlds.
+
+## Delivery status
+
+The user approved publication and submission, with a company-independent name.
+The project is published as Waypoint Forge. The public repository returned HTTP
+200 without authentication. Final form receipt is kept outside source control.
